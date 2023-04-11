@@ -16,24 +16,27 @@ const paths = {
 /// vendors js ///
 gulp.task('js_file', function () {
   return gulp.src(
-    [
-      'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
-      'node_modules/swiper/swiper-bundle.min.js',
-      'node_modules/aos/dist/aos.js',
-    ], { base: 'node_modules', "allowEmpty": true })
+      [
+        'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+        'node_modules/swiper/swiper-bundle.min.js',
+      ], {
+        base: 'node_modules',
+        "allowEmpty": true
+      })
     .pipe(gulp.dest('./assets/js/vendors/'));
 });
 
 /// vendors css ///
 gulp.task('css_file', function () {
   return gulp.src(
-    [
-      './node_modules/swiper/swiper.min.css',
-      './node_modules/swiper/swiper-bundle.min.css',
-      './node_modules/aos/dist/aos.css',
-    ], { base: 'node_modules', "allowEmpty": true })
-    .pipe(sass({
-    }).on('error', sass.logError))
+      [
+        './node_modules/swiper/swiper.min.css',
+        './node_modules/swiper/swiper-bundle.min.css',
+      ], {
+        base: 'node_modules',
+        "allowEmpty": true
+      })
+    .pipe(sass({}).on('error', sass.logError))
     .pipe(gulp.dest('./assets/css/vendors/'));
 });
 
