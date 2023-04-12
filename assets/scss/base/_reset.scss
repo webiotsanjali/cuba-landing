@@ -1,0 +1,43 @@
+/**=====================
+    Reset css start
+==========================**/
+@media (min-width: 1460px) {
+    .custom-container {
+        max-width: 1420px;
+    }
+}
+
+.txt-primary {
+    color: rgba(var(--primary), 1);
+}
+.txt-secondary {
+    color: rgba(var(--secondary), 1);
+}
+.txt-warning {
+    color: rgba(var(--warning), 1);
+}
+.txt-success {
+    color: rgba(var(--success), 1);
+}
+.txt-info {
+    color: rgba(var(--info), 1);
+}
+.txt-danger {
+    color: rgba(var(--danger), 1);
+}
+
+section {
+    padding-top: 5rem;
+    @include media-breakpoint-down(xl) {
+        padding-top: 4.0625rem;
+    }
+    @include media-breakpoint-down(md) {
+        padding-top: 3.4375rem;
+    }
+    @include media-breakpoint-down(sm) {
+        padding-top: 2.5rem;
+    }
+}
+/**=====================
+    Reset css end
+==========================**/

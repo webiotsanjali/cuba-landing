@@ -1,0 +1,36 @@
+/**=====================
+    Buttons css start
+==========================**/
+.btn {
+    padding: .6875rem 1.5625rem;
+    @include media-breakpoint-down(md) {
+        font-size: .875rem;
+        padding: .5rem .9375rem;
+    }
+}
+
+.btn-primary {
+    background-color: rgba(var(--primary), 1);
+    border-color: rgba(var(--primary), 1);
+    background-image: linear-gradient(30deg, rgba(var(--primary), 1) 50%, transparent 50%);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+    &:hover, &:active, &.active, &.show {
+        background-position: 100%;
+        background-color: transparent;
+        border-color: rgba(var(--primary), 1);
+        color: rgba(var(--primary), 1);
+    }
+}
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+    background-position: 100%;
+    background-color: transparent;
+    border-color: rgba(var(--primary), 1);
+    color: rgba(var(--primary), 1);
+}
+/**=====================
+    Buttons css end
+==========================**/

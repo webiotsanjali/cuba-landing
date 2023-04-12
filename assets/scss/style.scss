@@ -16,4 +16,12 @@
 
 @import "abstracts/variables";
 
+@import "base/typography";
+@import "base/reset";
+
+@import "components/buttons";
+@import "components/keyframes";
+@import "components/home";
+
+@import "layout/forms";
 @import "layout/header";

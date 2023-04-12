@@ -3,19 +3,21 @@
 :root {
     --theme-body-font-color: 0, 2, 72;
     --theme-body-sub-title-color: 82, 82, 108;
+    --white:255,255,255;
+    --black:0,0,0;
+    --input-border: 203, 203, 233;
+    /* Theme colors variables */
+    --primary: 115, 102, 255;
+    --secondary: 255, 51, 100;
+    --success: 84, 186, 74;
+    --info: 22, 199, 249;
+    --warning: 255, 169, 65;
+    --danger: 252, 68, 56;
+    --light: 244, 244, 244;
 }
-
-/* Theme colors variables */
-$primary-color: #7366FF;
-$secondary-color: #FF3364;
-$success-color: #54BA4A;
-$info-color : #16C7F9;
-$warning-color: #FFAA05;
-$danger-color: #FC4438;
-$light-color : #f4f4f4;
 
 /* font variables */
 $font-rubik: Rubik;
 $font-roboto: Roboto;
 $font-serif: sans-serif;
-$landing-cursive: 'Caveat', cursive;
+$font-cursive: 'Caveat', cursive;

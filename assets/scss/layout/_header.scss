@@ -1,7 +1,62 @@
 /**=====================
     Header css start
 ==========================**/
-
+header {
+    .navbar-brand {
+        img {
+            @include media-breakpoint-down(sm) {
+                width: 5.625rem;
+            }
+        }
+    }
+    .navbar-collapse {
+        flex-grow: unset;
+        @include media-breakpoint-down(lg) {
+            position: absolute;
+            top: 60px;
+            padding: 10px;
+            background-color: rgba(var(--white), 1);
+            z-index: 9;
+            box-shadow: 5px 5px 5px rgba(var(--black), 0.02);
+            padding: 1.5625rem;
+            right: 21%;
+        }
+    }
+    .navbar-expand-lg {
+        .navbar-nav {
+            .nav-link {
+                padding: 0;
+            }
+        }
+    }
+    .navbar-nav {
+        gap: 1.875rem;
+        @include media-breakpoint-down(lg) {
+            gap: .625rem;
+        }
+    }
+    .navbar {
+        > .container  {
+                gap: 10px;
+        }
+    }
+    .navbar-toggler {
+        margin-left: auto;
+        padding: 0;
+        border: none;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+.header-absolute {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    .bg-light {
+        background-color: transparent !important;
+    }
+}
 /**=====================
     Header css end
 ==========================**/
