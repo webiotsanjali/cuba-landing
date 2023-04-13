@@ -1,0 +1,17 @@
+/**=====================
+    About css start
+==========================**/
+.about-style-1 {
+    .about-images-wrapper {
+        position: relative;
+        .left-image {
+            position: absolute;
+            left: -11%;
+            top: 15%;
+            animation: up-down 4s infinite;
+        }
+    }
+}
+/**=====================
+    About css end
+==========================**/

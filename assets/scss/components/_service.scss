@@ -1,0 +1,71 @@
+/**=====================
+    Service css start
+==========================**/
+.service-style-1 {
+    .service-content {
+        padding: 1.5625rem;
+        h3 {
+            font-size: 1.25rem;
+        }
+        .service-icon-box {
+            margin-bottom: .9375rem;
+        }
+        .service-content-wrap {
+            position: relative;
+            h3 {
+                padding-bottom: .625rem;
+            }
+            a {
+                position: absolute;
+                right: 0;
+                top: 0;
+                svg {
+                    width: .75rem;
+                    height: .75rem;
+                }
+            }
+        }
+    }
+    .service-image {
+        img {
+            width: 100%;
+        }
+    }
+    .service-box {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 10.9412px 10.9412px rgba(var(--service-shadow), 0.04), 0px 9.51387px 7.6111px rgba(var(--service-shadow), 0.06), 0px 5.05275px 4.0422px rgba(var(--service-shadow), 0.0484671);
+        .service-shape {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .service-icon-box {
+            margin-bottom: 1.5625rem;
+        }
+        .service-content-wrap {
+            h3 {
+                padding-bottom: .9375rem;
+            }
+        }
+    }
+}
+.service-wrapper {
+    margin-bottom: 1.875rem;
+    > div {
+        &:nth-child(odd) {
+            .service-image {
+                margin-right: 1.5625rem;
+            }
+        }
+        &:nth-child(even) {
+            .service-image {
+                margin-left: 1.5625rem;
+            }
+        }
+    }
+}
+/**=====================
+    Service css end
+==========================**/

@@ -7,6 +7,9 @@
         font-size: .875rem;
         padding: .5rem .9375rem;
     }
+    @include media-breakpoint-down(sm) {
+        font-size: .8125rem;
+    }
 }
 
 .btn-primary {

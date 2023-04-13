@@ -1,0 +1,39 @@
+/**=====================
+    Brand css start
+==========================**/
+.brand-style-1 {
+    .brand-box {
+        border: 1px solid rgba(var(--theme-body-sub-title-color), 0.4);
+        border-radius: 5px;
+        padding: .9375rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 68px;
+        object-fit: cover;
+        transition: 0.5s;
+        img {
+            filter: grayscale(1);
+            transition: 0.5s;
+        }
+        &:hover {
+            border: 1px solid rgba(var(--primary), 1);
+            box-shadow: 0px 9px 20px rgba(var(--shadow-color), 0.15);
+            transition: 0.5s;
+            img {
+                filter: unset;
+                transition: 0.5s;
+            }
+        }
+    }
+    .brand-slider-wrapper {
+        margin: -1px -1px -1.25rem;
+        .swiper {
+            padding: 1px 1px 1.25rem;
+        }
+    }
+}
+
+/**=====================
+    Brand css end
+==========================**/
