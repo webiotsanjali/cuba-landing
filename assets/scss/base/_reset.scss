@@ -36,6 +36,12 @@
         fill: rgba(var(--primary), 1);
     }
 }
+.bg-light-success {
+    background-color: rgba(var(--success), 0.1);
+}
+.bg-light-danger {
+    background-color: rgba(var(--danger), 0.1);
+}
 
 section {
     padding-top: 5rem;
