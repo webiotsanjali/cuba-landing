@@ -42,6 +42,12 @@
 .bg-light-danger {
     background-color: rgba(var(--danger), 0.1);
 }
+.bg-light-info {
+    background-color: rgba(var(--info), 0.1);
+}
+.bg-light-warning {
+    background-color: rgba(var(--warning), 0.1);
+}
 
 section {
     padding-top: 5rem;

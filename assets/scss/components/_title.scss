@@ -11,7 +11,19 @@
     }
     p {
         width: 60%;
-        margin-top: 1.375rem;
+        margin-top: 1.375rem !important;
+        @include media-breakpoint-down(xl) {
+            width: 70%;
+        }
+        @include media-breakpoint-down(lg) {
+            margin-top: .9375rem !important;
+        }
+        @include media-breakpoint-down(md) {
+            width: 100%;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-top: .5rem !important;
+        }
     }
     h5 {
         font-family: $font-cursive;

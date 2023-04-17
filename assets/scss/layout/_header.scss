@@ -26,6 +26,9 @@ header {
         .navbar-nav {
             .nav-link {
                 padding: 0;
+                &.active {
+                    color: rgba(var(--primary), 1);
+                }
             }
         }
     }
