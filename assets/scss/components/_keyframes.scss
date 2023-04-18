@@ -12,6 +12,17 @@
    transform: translateY(0); 
  }
 }
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 /**=====================
     Keyframes css end
 ==========================**/

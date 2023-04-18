@@ -61,6 +61,19 @@ section {
         padding-top: 2.5rem;
     }
 }
+
+.section-b-space {
+    padding-bottom: 5rem;
+    @include media-breakpoint-down(xl) {
+        padding-bottom: 4.0625rem;
+    }
+    @include media-breakpoint-down(md) {
+        padding-bottom: 3.4375rem;
+    }
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 2.5rem;
+    }
+}
 /**=====================
     Reset css end
 ==========================**/
