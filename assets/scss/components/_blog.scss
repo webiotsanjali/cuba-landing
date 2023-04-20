@@ -1,0 +1,22 @@
+/**=====================
+    Blog css start
+==========================**/
+.blog-style-1 {
+    .blog-content {
+        padding-top: 1.875rem;
+        width: 89%;
+        a {
+            margin-top: 1.25rem;
+            text-decoration: underline;
+            color: #132431;
+            display: inline-block;
+            svg {
+                color: rgba(var(--primary), 1);
+            }
+        }
+    }
+}
+
+/**=====================
+    Blog css end
+==========================**/

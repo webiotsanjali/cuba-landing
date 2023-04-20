@@ -1,6 +1,42 @@
 /**=====================
     Home css start
 ==========================**/
+.home-details {
+    margin-top: 1.875rem;
+    @include media-breakpoint-down(sm) {
+        margin-top: 1.25rem;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 1.875rem;
+        margin-top: 1.25rem;
+        @include media-breakpoint-down(sm) {
+            gap: 1.25rem;
+            margin-top: .9375rem;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            gap: .625rem;
+            @include media-breakpoint-down(sm) {
+                gap: .3125rem;
+            }
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+                @include media-breakpoint-down(md) {
+                    width: 1.25rem;
+                    height: 1.25rem;
+                }
+                @include media-breakpoint-down(sm) {
+                    width: 1.125rem;
+                    height: 1.125rem;
+                }
+            }
+        }
+    }
+ }
 .home-style-1 {
     background-image: url(../images/sass/bg.webp);
     padding-top: 6.25rem;
@@ -102,42 +138,6 @@
             background: transparent;
             border: none;
             padding-right: 130px;
-        }
-    }
-    .home-details {
-        margin-top: 1.875rem;
-        @include media-breakpoint-down(sm) {
-            margin-top: 1.25rem;
-        }
-        ul {
-            display: flex;
-            align-items: center;
-            gap: 1.875rem;
-            margin-top: 1.25rem;
-            @include media-breakpoint-down(sm) {
-                gap: 1.25rem;
-                margin-top: .9375rem;
-            }
-            li {
-                display: flex;
-                align-items: center;
-                gap: .625rem;
-                @include media-breakpoint-down(sm) {
-                    gap: .3125rem;
-                }
-                svg {
-                    width: 1.5rem;
-                    height: 1.5rem;
-                    @include media-breakpoint-down(md) {
-                        width: 1.25rem;
-                        height: 1.25rem;
-                    }
-                    @include media-breakpoint-down(sm) {
-                        width: 1.125rem;
-                        height: 1.125rem;
-                    }
-                }
-            }
         }
     }
     .home-image {

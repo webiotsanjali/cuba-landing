@@ -1,5 +1,134 @@
+/**=====================
+    Subscribe css start
+==========================**/
 .subscribe-style-1 {
     .subscribe-box {
-
+        position: relative;
+        background: url(../images/sass/subscribe/bg.webp);
+        background-size: cover;
+        padding: 5rem 1.25rem;
+        color: rgba(var(--white), 1);
+        border-radius: 14px;
+        @include media-breakpoint-down(xl) {
+            padding: 4.0625rem 1.25rem;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 3.4375rem 1.25rem;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 2.5rem .9375rem;
+        }
+        
+        h3 {
+            margin-bottom: .625rem;
+            font-size: 2.5rem;
+            @include media-breakpoint-down(xxl) {
+                font-size: 2.1875rem;
+            }
+            @include media-breakpoint-down(xl) {
+                font-size: 1.875rem;
+            }
+            @include media-breakpoint-down(lg) {
+                font-size: 1.5625rem;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 1.25rem;
+            }
+        }
+        p {
+            color: rgba(var(--white), 1);
+        }
+        form {
+            width: 37%;
+            margin: 1.5625rem auto 0;
+            @include media-breakpoint-down(xxl) {
+                width: 48%;
+            }
+            @include media-breakpoint-down(xl) {
+                width: 55%;
+            }
+            @include media-breakpoint-down(lg) {
+                width: 68%;
+            }
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+            input {
+                padding: 12px;
+                @include media-breakpoint-down(sm) {
+                    padding: .625rem;
+                }
+            }
+            .input-group {
+                @include media-breakpoint-down(md) {
+                   display: block;
+                }
+                input {
+                     @include media-breakpoint-down(md) {
+                        width: 100%;
+                        border-radius: 5px !important;
+                     }
+                }
+                > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+                    @include media-breakpoint-down(md) {
+                        border-top-left-radius: 6px;
+                        border-bottom-left-radius: 6px;
+                        margin-left: auto;
+                    }
+                }
+                .input-group-text {
+                     @include media-breakpoint-down(md) {
+                         margin-top: .625rem;
+                        margin-right: auto;
+                     }
+                }
+            }
+            .btn-dark {
+                padding: 1rem 1.625rem;
+                @include media-breakpoint-down(xl) {
+                    padding: 0.5rem 1.25rem;
+                }
+                svg {
+                    font-size: .8125rem;
+                }
+            }
+        }
+        .home-details {
+            @include media-breakpoint-down(xl) {
+                margin-top: 1rem;
+            }
+            ul {
+                justify-content: center;
+            }
+        }
+        .decore {
+            .left-image {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                @include media-breakpoint-down(xxl) {
+                    width: 21%;
+                }
+                @include media-breakpoint-down(lg) {
+                    display: none;
+                }
+            }
+            .right-image {
+                position: absolute;
+                right: 0;
+                top: 1.25rem;
+                @include media-breakpoint-down(xxl) {
+                    width: 23%;
+                    top: 3.625rem;
+                }
+                @include media-breakpoint-down(xl) {
+                    display: none;
+                }
+            }
+        }
     }
 }
+
+/**=====================
+    Subscribe css end
+==========================**/

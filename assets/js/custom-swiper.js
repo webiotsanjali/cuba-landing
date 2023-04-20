@@ -59,3 +59,29 @@ var review_swiper = new Swiper('.review-slider-1', {
         }
     }
 });
+
+const plan_swiper1 = new Swiper(".plan-slider-1", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    autoplay: {
+        delay: 2000,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 12,
+        },
+        530: {
+            slidesPerView: 2,
+            spaceBetween: 18,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 18,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+        },
+    },
+});
