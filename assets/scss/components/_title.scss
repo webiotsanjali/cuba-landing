@@ -29,6 +29,10 @@
         font-family: $font-cursive;
         color: rgba(var(--success), 1);
         margin-bottom: .3125rem;
+        margin-top: -0.25rem;
+        @include media-breakpoint-down(lg) {
+            margin-top: -0.1875rem;
+        }
     }
     h2 {
         position: relative;

@@ -35,12 +35,12 @@
             ul {
                 display: flex;
                 flex-direction: column;
-                height: 5.25rem;
+                height: 5.8rem;
                 margin-bottom: 2.1875rem;
                 gap: .75rem;
                 overflow: hidden;
                 @include media-breakpoint-down(xxl) {
-                    height: 6.25rem;
+                    height: 7.25rem;
                 }
                 @include media-breakpoint-down(md) {
                     height: 7.5rem;
