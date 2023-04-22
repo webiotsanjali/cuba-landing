@@ -1,6 +1,22 @@
 /**=====================
     Header css start
 ==========================**/
+.dropdown-item {
+    color: var(--bs-nav-link-color);
+    text-transform: capitalize;
+    &.active, &:active {
+        background-color: rgba(var(--primary), 1);
+    }
+    &:focus-visible {
+        outline: none;
+    }
+}
+.navbar-toggler-icon {
+    @include media-breakpoint-down(md) {
+        width: 1em;
+        height: 1em;
+    }
+}
 header {
     .navbar-brand {
         img {
@@ -20,6 +36,7 @@ header {
             box-shadow: 5px 5px 5px rgba(var(--black), 0.02);
             padding: 1.5625rem;
             right: 21%;
+            width: 13.125rem;
         }
     }
     .navbar-expand-lg {

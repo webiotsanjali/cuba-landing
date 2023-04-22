@@ -169,6 +169,112 @@
         }
     }
 }
+.home-style-2 {
+    background-image: url(../images/app-landing/home/bg.webp);
+    padding-top: 8.9rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    @include media-breakpoint-down(xxl) {
+        padding-top: 6.2rem;
+    }
+    @include media-breakpoint-down(xl) {
+        background-position: top;
+        padding-bottom: 4.0625rem;
+    }
+    @include media-breakpoint-down(md) {
+        padding-bottom: 3.4375rem;
+    }
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 2.5rem;
+        padding-top: 4.45rem;
+    }
+    .home-content {
+        width: 85%;
+        padding-top: 3.125rem;
+        @include media-breakpoint-down(xxl) {
+            width: 92%;
+        }
+        @include media-breakpoint-down(xl) {
+            padding-top: 2rem;
+        }
+        @include media-breakpoint-down(lg) {
+            padding-top: 0;
+        }
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+        h1 {
+            span {
+                font-weight: 400;
+                &::after {
+                    background-image: url(../images/shape/3.webp);
+                    background-repeat: no-repeat;
+                    height: .6875rem;
+                    @include media-breakpoint-down(lg) {
+                        height: .4375rem;
+                    }
+                    @include media-breakpoint-down(sm) {
+                        height: .25rem;
+                    }
+                }
+            }
+            b {
+                background: url(../images/shape/4.webp);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        p {
+            width: 80%;
+            @include media-breakpoint-down(xl) {
+                width: 100%;
+            }
+        }
+        .store-links {
+            display: flex;
+            gap: .625rem;
+            li {
+                img {
+                    @include media-breakpoint-down(sm) {
+                        width: 100%;
+                        height: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    .home-details {
+        padding: 1.2rem 0 1.875rem;
+        margin-top: 0;
+        @include media-breakpoint-down(md) {
+            padding: 1rem 0;
+        }
+    }
+    .left-image {
+        position: absolute;
+        left: -38%;
+        top: 32%;
+        animation: up-down 4s infinite;
+        @include media-breakpoint-down(xxl) {
+            width: 66%;
+        }
+    }
+    .right-image {
+        position: absolute;
+        right: -15%;
+        top: 28%;
+        animation: up-down 5s infinite;
+        @media (max-width: 1660px) {
+            display: none;
+        }
+    }
+    .home-image {
+        margin-top: 0;
+        @include media-breakpoint-down(xl) {
+           margin-bottom: -1.625rem;
+        }
+    }
+}
 
 /**=====================
     Home css end
