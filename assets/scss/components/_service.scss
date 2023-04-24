@@ -100,6 +100,68 @@
         }
     }
 }
+.service-style-2 {
+    .title-style-1 {
+        h2 {
+            width: 72%;
+            margin-left: auto;
+            margin-right: auto;
+            @include media-breakpoint-down(xxl) {
+                width: 83%;
+            }
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
+        p {
+           width: 49%;
+           @include media-breakpoint-down(xl) {
+                width: 67%;
+           }
+           @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
+    }
+    .service-content {
+        text-align: center;
+        padding: 2.1875rem 2.375rem;
+        @include media-breakpoint-down(md) {
+            padding: 1.875rem 1.25rem;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 1.25rem .9375rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            @include media-breakpoint-down(lg) {
+                font-size: 1.25rem;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 1.125rem;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 1rem;
+            }
+        }
+    }
+    .service-wrapper {
+        > div:nth-child(odd), > div:nth-child(even) {
+            .service-image {
+                margin: 0 3.125rem;
+                @include media-breakpoint-down(md) {
+                    margin: 0 1.875rem;
+                }
+                @include media-breakpoint-down(sm) {
+                    margin: 0 1.25rem;
+                }
+            }
+        }
+    }
+    .light-card {
+        background: #F5F8FF;
+    }
+}
 /**=====================
     Service css end
 ==========================**/
