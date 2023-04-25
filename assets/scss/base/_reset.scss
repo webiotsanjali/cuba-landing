@@ -49,6 +49,27 @@
     background-color: rgba(var(--warning), 0.1);
 }
 
+.info {
+    svg {
+        fill: rgba(var(--info), 1);
+    }
+}
+.primary {
+    svg {
+        fill: rgba(var(--primary), 1);
+    }
+}
+.success {
+    svg {
+        fill: rgba(var(--success), 1);
+    }
+}
+.warning {
+    svg {
+        fill: rgba(var(--warning), 1);
+    }
+}
+
 section {
     padding-top: 5rem;
     @include media-breakpoint-down(xl) {

@@ -159,6 +159,9 @@
             li {
                 + li {
                     margin-top: 1.875rem;
+                    @include media-breakpoint-down(md) {
+                        margin-top: 1.25rem;
+                    }
                 }
             }
         }

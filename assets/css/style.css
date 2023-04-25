@@ -11064,6 +11064,22 @@ span {
   background-color: rgba(var(--warning), 0.1);
 }
 
+.info svg {
+  fill: rgba(var(--info), 1);
+}
+
+.primary svg {
+  fill: rgba(var(--primary), 1);
+}
+
+.success svg {
+  fill: rgba(var(--success), 1);
+}
+
+.warning svg {
+  fill: rgba(var(--warning), 1);
+}
+
 section {
   padding-top: 5rem;
 }
@@ -11645,6 +11661,17 @@ section {
   padding: 1px 1px 1.25rem;
 }
 
+.brand-slider-2 .swiper-wrapper {
+  height: auto;
+}
+.brand-slider-2 .bottom-nav .slidePrev-btn, .brand-slider-2 .bottom-nav .slideNext-btn {
+  border: 1px solid rgba(var(--theme-body-sub-title-color), 0.3);
+  border-radius: 10px;
+}
+.brand-slider-2 .bottom-nav .slideNext-btn::before {
+  left: -0.875rem;
+}
+
 /**=====================
     Brand css end
 ==========================**/
@@ -11788,7 +11815,7 @@ section {
   text-align: center;
   padding: 2.1875rem 2.375rem;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .service-style-2 .service-content {
     padding: 1.875rem 1.25rem;
   }
@@ -11819,7 +11846,7 @@ section {
 .service-style-2 .service-wrapper > div:nth-child(odd) .service-image, .service-style-2 .service-wrapper > div:nth-child(even) .service-image {
   margin: 0 3.125rem;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .service-style-2 .service-wrapper > div:nth-child(odd) .service-image, .service-style-2 .service-wrapper > div:nth-child(even) .service-image {
     margin: 0 1.875rem;
   }
@@ -12587,6 +12614,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: rgba(var(--theme-body-sub-title-color), 0.8);
 }
 @media (max-width: 575.98px) {
   .bottom-nav .slidePrev-btn, .bottom-nav .slideNext-btn {
@@ -12737,20 +12765,41 @@ section {
   }
 }
 
-.info svg {
-  fill: rgba(var(--info), 1);
+.review-style-2 .review-user span {
+  color: rgba(var(--theme-body-sub-title-color), 1);
+  opacity: 0.8;
 }
-
-.primary svg {
-  fill: rgba(var(--primary), 1);
+.review-style-2 .review-box h3, .review-style-2 .review-box .h3 {
+  margin-bottom: 0.3125rem;
 }
-
-.success svg {
-  fill: rgba(var(--success), 1);
+.review-style-2 .review-box .review-content {
+  height: 7.5rem;
 }
-
-.warning svg {
-  fill: rgba(var(--warning), 1);
+@media (max-width: 991.98px) {
+  .review-style-2 .review-box .review-content {
+    height: 6.5rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .review-style-2 .review-box .review-content {
+    height: 6.3rem;
+  }
+}
+.review-style-2 .review-box .review-image img {
+  width: 2.625rem;
+}
+.review-style-2 .review-slider-2 .swiper-wrapper {
+  height: auto;
+}
+.review-style-2 .review-slider-2 .bottom-nav .slidePrev-btn, .review-style-2 .review-slider-2 .bottom-nav .slideNext-btn {
+  border: 1px solid rgba(var(--theme-body-sub-title-color), 0.3);
+  border-radius: 10px;
+}
+.review-style-2 .review-slider-2 .bottom-nav .slideNext-btn::before {
+  left: -0.875rem;
+}
+.review-style-2 .review-slider-wrapper {
+  margin: 0;
 }
 
 /**=====================
@@ -13039,6 +13088,121 @@ section {
   padding: 0.25rem;
 }
 
+.plan-style-2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 1.5625rem 0.9375rem;
+}
+@media (max-width: 575.98px) {
+  .plan-style-2 ul {
+    padding: 1.25rem 0;
+  }
+}
+.plan-style-2 ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.plan-style-2 ul li svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.plan-style-2 ul li span {
+  color: rgba(var(--theme-body-sub-title-color), 1);
+  opacity: 0.8;
+}
+.plan-style-2 .plan-price {
+  padding: 1.25rem 2.375rem;
+  background: #F5F8FF;
+  border-radius: 0.3125rem;
+  transition: 0.5s;
+}
+.plan-style-2 .plan-price .d-flex {
+  align-items: flex-end;
+  justify-content: center;
+}
+.plan-style-2 .plan-price .d-flex h6, .plan-style-2 .plan-price .d-flex .h6 {
+  margin-bottom: 3px;
+}
+.plan-style-2 .plan-price .btn {
+  padding: 0.4375rem 1.25rem;
+  margin-top: 0.625rem;
+  width: 100%;
+}
+.plan-style-2 .plan-slider-wrapper {
+  margin: -0.625rem;
+}
+.plan-style-2 .plan-slider-wrapper .swiper {
+  padding: 0.625rem;
+}
+.plan-style-2 .plan-card {
+  transition: 0.5s;
+  border: 1px solid transparent;
+  padding: 1.875rem 1.5625rem;
+  border-radius: 5px;
+  box-shadow: 0px 10.9412px 10.9412px rgba(82, 77, 141, 0.04), 0px 9.51387px 7.6111px rgba(82, 77, 141, 0.06), 0px 5.05275px 4.0422px rgba(82, 77, 141, 0.0484671);
+}
+.plan-style-2 .plan-card .plan-icon-wrapper {
+  position: relative;
+  width: 4.9375rem;
+  height: 4.9375rem;
+  padding: 0.5rem;
+  border-radius: 100%;
+  background: linear-gradient(159.12deg, #ECEEF4 15.46%, #FFFFFF 65.03%);
+  margin: 0 auto;
+}
+@media (max-width: 767.98px) {
+  .plan-style-2 .plan-card .plan-icon-wrapper {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+}
+.plan-style-2 .plan-card .plan-icon-wrapper .plan-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(159.08deg, #F9F9F9 12%, #FFFFFF 86.17%);
+  box-shadow: 0px 4px 4px rgba(83, 81, 114, 0.2);
+  border-radius: 100%;
+}
+.plan-style-2 .plan-card .plan-icon-wrapper svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.plan-style-2 .plan-card .plan-content {
+  text-align: center;
+}
+.plan-style-2 .plan-card .plan-content h3, .plan-style-2 .plan-card .plan-content .h3 {
+  font-size: 1.375rem;
+  margin-top: 0.9375rem;
+}
+@media (max-width: 767.98px) {
+  .plan-style-2 .plan-card .plan-content h3, .plan-style-2 .plan-card .plan-content .h3 {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .plan-style-2 .plan-card .plan-content h3, .plan-style-2 .plan-card .plan-content .h3 {
+    font-size: 1rem;
+  }
+}
+.plan-style-2 .plan-card:hover {
+  border: 1px solid rgba(var(--primary), 1);
+  transition: 0.5s;
+}
+.plan-style-2 .plan-card:hover .plan-price {
+  color: rgba(var(--white), 1);
+  background: rgba(var(--primary), 1);
+  transition: 0.5s;
+}
+.plan-style-2 .plan-card:hover .plan-price .btn-primary {
+  background: rgba(var(--white), 1);
+  color: rgba(var(--primary), 1);
+}
+
 /**=====================
     Plan css end
 ==========================**/
@@ -13152,6 +13316,9 @@ section {
   width: 1.0625rem;
   height: 1.0625rem;
 }
+.choose-style-2 .choose-content .choose-icon:hover svg {
+  animation: tada 1.5s ease infinite;
+}
 .choose-style-2 .choose-content ul li {
   display: flex;
   gap: 1.875rem;
@@ -13221,6 +13388,82 @@ section {
 
 /**=====================
     Why choose css end
+==========================**/
+/**=====================
+   Track css start
+==========================**/
+.track-card {
+  background: url(../images/app-landing/track/1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 1.875rem;
+  border-radius: 10px;
+}
+@media (max-width: 991.98px) {
+  .track-card {
+    padding-bottom: 1.875rem;
+  }
+}
+.track-card .women-image {
+  position: absolute;
+  top: 26%;
+}
+@media (max-width: 1199.98px) {
+  .track-card .women-image {
+    width: 22%;
+    top: unset;
+    bottom: 8.75rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .track-card .women-image {
+    display: none;
+  }
+}
+.track-card .track-images-wrapper {
+  position: relative;
+  margin-bottom: -0.875rem;
+}
+.track-card .left-image {
+  position: absolute;
+  left: -3.4375rem;
+  bottom: -6.25rem;
+  animation: up-down 4s infinite;
+}
+@media (max-width: 1199.98px) {
+  .track-card .left-image {
+    left: 8.5625rem;
+  }
+}
+.track-card .right-image {
+  position: absolute;
+  right: -6.25rem;
+  bottom: -8.75rem;
+  animation: up-down 5s infinite;
+}
+@media (max-width: 1199.98px) {
+  .track-card .right-image {
+    right: 3.75rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .track-card .left-image, .track-card .right-image {
+    display: none;
+  }
+}
+
+.track-style-2 {
+  position: relative;
+  padding-bottom: 8.75rem;
+}
+@media (max-width: 991.98px) {
+  .track-style-2 {
+    padding-bottom: 0;
+  }
+}
+
+/**=====================
+   Track css end
 ==========================**/
 /**=====================
     Forms css start
@@ -13296,6 +13539,16 @@ header .navbar-nav {
 @media (max-width: 991.98px) {
   header .navbar-nav {
     gap: 0.625rem;
+  }
+}
+header .navbar {
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+}
+@media (max-width: 991.98px) {
+  header .navbar {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
   }
 }
 header .navbar > .container {
@@ -13503,6 +13756,11 @@ header .navbar-toggler:focus {
 }
 .footer-style-1 .main-footer .footer-location li + li {
   margin-top: 1.875rem;
+}
+@media (max-width: 767.98px) {
+  .footer-style-1 .main-footer .footer-location li + li {
+    margin-top: 1.25rem;
+  }
 }
 .footer-style-1 .sub-footer {
   padding: 1rem 0;

@@ -126,7 +126,7 @@
     .service-content {
         text-align: center;
         padding: 2.1875rem 2.375rem;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
             padding: 1.875rem 1.25rem;
         }
         @include media-breakpoint-down(sm) {
@@ -149,7 +149,7 @@
         > div:nth-child(odd), > div:nth-child(even) {
             .service-image {
                 margin: 0 3.125rem;
-                @include media-breakpoint-down(md) {
+                @include media-breakpoint-down(lg) {
                     margin: 0 1.875rem;
                 }
                 @include media-breakpoint-down(sm) {

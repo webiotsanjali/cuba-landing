@@ -28,6 +28,11 @@
                 width: 1.0625rem;
                 height: 1.0625rem;
             }
+            &:hover {
+                svg {
+                    animation: tada 1.5s ease infinite;
+                }
+            }
         }
         ul {
             li {

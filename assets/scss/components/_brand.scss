@@ -33,6 +33,22 @@
         }
     }
 }
+.brand-slider-2 {
+    .swiper-wrapper {
+        height: auto;
+    }
+    .bottom-nav {
+        .slidePrev-btn, .slideNext-btn {
+            border: 1px solid rgba(var(--theme-body-sub-title-color), 0.3);
+            border-radius: 10px;
+        }
+        .slideNext-btn {
+            &::before {
+                left: -0.875rem;
+            }
+        }
+    }
+}
 
 /**=====================
     Brand css end
