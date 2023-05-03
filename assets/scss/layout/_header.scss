@@ -4,19 +4,24 @@
 .dropdown-item {
     color: var(--bs-nav-link-color);
     text-transform: capitalize;
-    &.active, &:active {
+
+    &.active,
+    &:active {
         background-color: rgba(var(--primary), 1);
     }
+
     &:focus-visible {
         outline: none;
     }
 }
+
 .navbar-toggler-icon {
     @include media-breakpoint-down(md) {
         width: 1em;
         height: 1em;
     }
 }
+
 header {
     .navbar-brand {
         img {
@@ -25,8 +30,10 @@ header {
             }
         }
     }
+
     .navbar-collapse {
         flex-grow: unset;
+
         @include media-breakpoint-down(lg) {
             position: absolute;
             top: 60px;
@@ -39,65 +46,91 @@ header {
             width: 13.125rem;
         }
     }
+
     .navbar-expand-lg {
         .navbar-nav {
             .nav-link {
                 padding: 0;
+
                 &.active {
                     color: rgba(var(--primary), 1);
                 }
             }
         }
     }
+
     .navbar-nav {
         gap: 1.875rem;
+
         @include media-breakpoint-down(lg) {
             gap: .625rem;
         }
     }
+
     .navbar {
         padding-top: 1.125rem;
         padding-bottom: 1.125rem;
+
         @include media-breakpoint-down(lg) {
             padding-top: .625rem;
             padding-bottom: .625rem;
         }
-        > .container  {
-                gap: 10px;
+
+        >.container {
+            gap: 10px;
         }
     }
+
     .navbar-toggler {
         margin-left: auto;
         padding: 0;
         border: none;
+
         &:focus {
             box-shadow: none;
         }
     }
 }
+
 .header-absolute {
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 2;
+
     .bg-light {
         background-color: transparent !important;
     }
 }
+
 .header-3 {
     .navbar-nav {
         .nav-item {
             &:nth-last-child(-n + 2) {
-                 .nav-link {
+                .nav-link {
                     @include media-breakpoint-up(lg) {
                         color: rgba(var(--white), 1);
                     }
                 }
             }
-           
+
         }
     }
 }
+
+
+.nft-search {
+    position: relative;
+
+    svg {
+        position: absolute;
+        width: 0.9375rem;
+        height: 0.9375rem;
+        right: 0.75rem;
+
+    }
+}
+
 /**=====================
     Header css end
 ==========================**/
