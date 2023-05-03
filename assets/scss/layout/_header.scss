@@ -79,8 +79,23 @@ header {
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 2;
     .bg-light {
         background-color: transparent !important;
+    }
+}
+.header-3 {
+    .navbar-nav {
+        .nav-item {
+            &:nth-last-child(-n + 2) {
+                 .nav-link {
+                    @include media-breakpoint-up(lg) {
+                        color: rgba(var(--white), 1);
+                    }
+                }
+            }
+           
+        }
     }
 }
 /**=====================

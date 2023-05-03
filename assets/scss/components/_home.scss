@@ -275,6 +275,68 @@
         }
     }
 }
+.home-style-3 {
+    background-image: unset;
+    .home-content {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 5.5rem;
+        h1 {
+            font-size: 4.375rem;
+            text-transform: uppercase;
+            span {
+                font-weight: 500;
+            }
+        }
+        .home-job-content {
+            width: 90%;
+            form {
+                box-shadow: 0px 10.9412px 10.9412px rgba(var(--service-shadow), 0.04), 0px 9.51387px 7.6111px rgba(var(--service-shadow), 0.06), 0px 5.05275px 4.0422px rgba(var(--service-shadow), 0.0484671);
+                border-radius: 5.47059px;
+                padding: .625rem;
+                margin-top: 1.25rem;
+                svg {
+                    fill: rgba(var(--theme-body-sub-title-color), 0.8);
+                    width: .9375rem;
+                    height: .9375rem;
+                }
+                .form-control {
+                    border-width: 0 0 1px 0;
+                    border-radius: 0;
+                    padding-left: 0;
+                }
+                select {
+                    padding: .4688rem 0;
+                    flex: 1;
+                    border-width: 0 0 1px 0;
+                    border-color:  #ced4da;
+                    background: rgba(var(--white), 1);
+                    font-size: 1rem;
+                    color: rgba(var(--theme-body-sub-title-color), 0.8);
+                }
+                .btn {
+                    padding-top: .4375rem;
+                    padding-bottom: .4375rem;
+                }
+            }
+        }
+        p {
+            width: 100%;
+        }
+        .home-details {
+            padding-bottom: 0;
+            ul {
+                margin-top: 1.5625rem;
+            }
+        }
+    }
+    .home-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45%;
+    }
+}
 
 /**=====================
     Home css end
