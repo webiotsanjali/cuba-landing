@@ -23,6 +23,17 @@
     stroke-dashoffset: 0;
   }
 }
+
+@keyframes arrow_svg {
+  0% {
+      transform: scale(0);
+      transform-origin: left;
+  }
+  100% {
+      transform: scale(1);
+      transform-origin: left;
+  }
+}
 /**=====================
     Keyframes css end
 ==========================**/
