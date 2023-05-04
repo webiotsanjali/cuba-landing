@@ -38,26 +38,22 @@
 
     <main>
         <!-- Header start -->
-        <header class="header-absolute">
+        <header class="header-absolute dark-nft">
             <nav class="navbar navbar-expand-lg bg-light">
                 <div class="custom-container container">
                     <a class="navbar-brand m-0" href="index.html">
-                        <img src="../assets/images/logo/logo.webp" alt="logo">
+                        <img src="../assets/images/logo/logo_dark.webp" alt="logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="bd-search">
-                        <button type="button" class="docsearch" aria-label="Search">
-                            <span class="docsearch-btn">
-                                <svg>
-                                    <use href="../assets/svg/icon_sprite.svg#"></use>
-                                </svg>
-                            </span>
-                        </button>
-
+                    <div class="d-flex align-items-center nft-search">
+                        <input class="form-control" type="text" placeholder="Type here..">
+                        <svg>
+                            <use href="../assets/svg/icon_sprite.svg#search"></use>
+                        </svg>
                     </div>
 
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -91,23 +87,57 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="#" class="btn btn-primary rounded-pill">Purchase now</a>
+                    <a href="#" class="btn btn-primary">Connect Wallet</a>
                 </div>
             </nav>
         </header>
 
-        <!-- bootstrap js -->
-        <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Home section slider -->
+        <section class="home-style-4">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-xl-10">
+                    <div class="home-slide-wrapper">
+                        <div class="swiper home-slide-1">
+                            <div class="home-wrapper swiper-wrapper">
+                                <div class="home-img swiper-slide">
+                                    <div class="slider-img">
+                                        <img src="../assets/images/nft/slider/2.webp" alt="nft-2">
+                                    </div>
+                                </div>
+                                <div class="home-img swiper-slide">
+                                    <div class="slider-img">
+                                        <img src="../assets/images/nft/slider/1.webp" alt="nft-1">
+                                    </div>
+                                </div>
+                                <div class="home-img swiper-slide">
+                                    <div class="slider-img">
+                                        <img src="../assets/images/nft/slider/3.webp" alt="nft-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- swiper js -->
-        <script src="../assets/js/vendors/swiper/swiper-bundle.min.js"></script>
-        <script src="../assets/js/custom-swiper.js"></script>
-
-        <!-- font awesome js -->
-        <script src="../assets/js/vendors/fontawesome/all.min.js"></script>
+        <!-- Home section content -->
+    </main>
 
 
-        <script src="../assets/js/script.js"></script>
+    <!-- bootstrap js -->
+    <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- swiper js -->
+    <script src="../assets/js/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/custom-swiper.js"></script>
+
+    <!-- font awesome js -->
+    <script src="../assets/js/vendors/fontawesome/all.min.js"></script>
+
+
+    <script src="../assets/js/script.js"></script>
+
 
 </body>
 
