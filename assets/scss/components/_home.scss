@@ -345,23 +345,59 @@
 
 .home-style-3 {
     background-image: unset;
+    padding-bottom: 0;
 
     .home-content {
         width: 100%;
         padding-top: 0;
-        padding-bottom: 5.5rem;
+        padding-bottom: 3.8rem;
+
+        @media (max-width: 1459px) {
+            padding-bottom: 3.2rem;
+        }
+
+        @include media-breakpoint-down(xxl) {
+            padding-bottom: 2rem;
+        }
 
         h1 {
+            position: relative;
             font-size: 4.375rem;
             text-transform: uppercase;
 
+            @media (max-width: 1459px) {
+                font-size: 3.5rem;
+            }
+
+            @include media-breakpoint-down(xl) {
+                font-size: 3.3rem;
+            }
+
             span {
+                position: relative;
                 font-weight: 500;
+            }
+
+            .heading-style {
+                position: absolute;
+                left: -2.375rem;
+                top: -1.5625rem;
+
+                @media (max-width: 1500px) {
+                    left: -1.375rem;
+                    top: -0.5625rem;
+                    width: 8%;
+                }
             }
         }
 
         .home-job-content {
+            padding-top: 1.25rem;
             width: 90%;
+
+            @media (max-width: 1459px) {
+                width: 96%;
+            }
 
             form {
                 box-shadow: 0px 10.9412px 10.9412px rgba(var(--service-shadow), 0.04), 0px 9.51387px 7.6111px rgba(var(--service-shadow), 0.06), 0px 5.05275px 4.0422px rgba(var(--service-shadow), 0.0484671);
@@ -389,11 +425,19 @@
                     background: rgba(var(--white), 1);
                     font-size: 1rem;
                     color: rgba(var(--theme-body-sub-title-color), 0.8);
+
+                    @include media-breakpoint-down(lg) {
+                        font-size: 0.875rem;
+                    }
                 }
 
                 .btn {
                     padding-top: .4375rem;
                     padding-bottom: .4375rem;
+
+                    @include media-breakpoint-down(xxl) {
+                        padding: .4375rem .75rem;
+                    }
                 }
             }
         }
@@ -406,7 +450,15 @@
             padding-bottom: 0;
 
             ul {
-                margin-top: 1.5625rem;
+                margin-top: 1.875rem;
+            }
+        }
+
+        .text-end {
+            margin-right: -3.125rem;
+
+            @media (max-width: 1469px) {
+                margin-right: -1.125rem;
             }
         }
     }
@@ -416,6 +468,37 @@
         top: 0;
         right: 0;
         width: 45%;
+
+        @media (max-width: 1459px) {
+            width: 43%;
+        }
+
+        @include media-breakpoint-down(xl) {
+            width: 27%;
+        }
+
+        img {
+            height: 50.75rem;
+            object-fit: cover;
+            border-bottom-left-radius: 4.6875rem;
+
+            @media (max-width: 1459px) {
+                height: 46.75rem;
+            }
+
+            @include media-breakpoint-down(xxl) {
+                height: 42.75rem;
+            }
+        }
+    }
+
+    .home-arrow {
+        position: absolute;
+        left: 41%;
+        transform: translateX(-50%);
+        animation: arrow_svg 5s infinite;
+        bottom: -17px;
+        width: 30%;
     }
 }
 

@@ -108,7 +108,7 @@ header {
         .nav-item {
             &:nth-last-child(-n + 2) {
                 .nav-link {
-                    @include media-breakpoint-up(lg) {
+                    @include media-breakpoint-up(xl) {
                         color: rgba(var(--white), 1);
                     }
                 }
