@@ -1,0 +1,52 @@
+/**=====================
+    Job css start
+==========================**/
+.job-box {
+    box-shadow: 0px 10px 10px rgba(var(--service-shadow), 0.04), 0px 8.69547px 6.95638px rgba(var(--service-shadow), 0.06), 0px 4.6181px 3.69448px rgba(var(--service-shadow), 0.0484671), 0px 1.9217px 1.53736px rgba(var(--service-shadow), 0.0337375);
+    border-radius: 5px;
+    h3 {
+        font-size: 1.125rem;
+    }
+    .job-top-content {
+        padding: 1.5625rem;
+        span {
+            &.d-block {
+                padding-block: .625rem;
+            }
+        }
+        a {
+            svg {
+                font-size: .75rem;
+            }
+        }
+    }
+    .job-footer {
+       padding: .9375rem 1.5625rem;
+       border-top: 1px solid rgba(var(--theme-body-sub-title-color), 0.1);
+       display: flex;
+       align-items: center;
+       gap: .9375rem;
+       @include media-breakpoint-down(sm) {
+        padding: .9375rem 1.25rem;
+       }
+       .job-icon-box {
+            box-shadow: 0px 10px 10px rgba(var(--service-shadow), 0.04), 0px 8.69547px 6.95638px rgba(var(--service-shadow), 0.06), 0px 4.6181px 3.69448px rgba(var(--service-shadow), 0.0484671), 0px 1.9217px 1.53736px rgba(var(--service-shadow), 0.0337375);
+            border-radius: 5px;
+            width: 2.9375rem;
+            height: 2.9375rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+       }
+       h6 {
+            font-size: 1rem;
+       }
+       .job-details {
+            margin-bottom: -8px;
+       }
+    }
+}
+
+/**=====================
+    Job css end
+==========================**/
