@@ -66,6 +66,42 @@
     }
 }
 
+.title-style-2 {
+    h2 {
+        position: relative;
+        color: rgba(var(--theme-body-font-color), 1);
+        padding-bottom: 1rem;
+        margin-bottom: 1.25rem;
+        &::after {
+            position: absolute;
+            content: '';
+            height: .5625rem;
+            width: 8rem;
+            bottom: 0;
+            background-image: url(../images/shape/7.webp);
+            background-size: cover;
+        }
+    }
+    p {
+        width: 58%;
+        margin-bottom: 1.25rem;
+        @include media-breakpoint-down(xl) {
+            width: 80%;
+        }
+    }
+    &.text-center {
+        h2 {
+            &::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        p {
+            margin-inline: auto;
+        }
+    }
+}
+
 /**=====================
     Title css end
 ==========================**/

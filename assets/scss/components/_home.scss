@@ -288,6 +288,9 @@
         @include media-breakpoint-down(xxl) {
             padding-bottom: 2rem;
         }
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 0;
+        }
         h1 {
             position: relative;
             font-size: 4.375rem;
@@ -297,6 +300,15 @@
             }
             @include media-breakpoint-down(xl) {
                 font-size: 3.3rem;
+            }
+            @include media-breakpoint-down(lg) {
+                font-size: 3rem;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 2.5rem;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 1.5rem;
             }
             span {
                 position: relative;
@@ -311,6 +323,10 @@
                     top: -0.5625rem;
                     width: 8%;
                 }
+                @include media-breakpoint-down(sm) {
+                    left: -0.625rem;
+                    width: 6%;
+                }
             }
         }
         
@@ -320,11 +336,20 @@
             @media (max-width: 1459px) {
                 width: 96%;
             }
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+            }
+            @include media-breakpoint-down(md) {
+                padding-top: 0.5rem;
+            }
             form {
                 box-shadow: 0px 10.9412px 10.9412px rgba(var(--service-shadow), 0.04), 0px 9.51387px 7.6111px rgba(var(--service-shadow), 0.06), 0px 5.05275px 4.0422px rgba(var(--service-shadow), 0.0484671);
                 border-radius: 5.47059px;
                 padding: .625rem;
                 margin-top: 1.25rem;
+                @include media-breakpoint-down(md) {
+                    margin-top: 0.8rem;
+                }
                 svg {
                     fill: rgba(var(--theme-body-sub-title-color), 0.8);
                     width: .9375rem;
@@ -353,6 +378,12 @@
                     @include media-breakpoint-down(xxl) {
                         padding: .4375rem .75rem;
                     }
+                    svg {
+                        @include media-breakpoint-down(md) {
+                            width: .75rem;
+                            height: .75rem;
+                        }
+                    }
                 }
             }
         }
@@ -363,6 +394,14 @@
             padding-bottom: 0;
             ul {
                 margin-top: 1.875rem;
+                @include media-breakpoint-down(md) {
+                    margin-top: 1.25rem;
+                }
+                @media  (max-width: 480px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0.5rem;
+                }
             }
         }
         .text-end {
