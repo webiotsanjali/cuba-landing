@@ -57,9 +57,34 @@
     background: rgba(223, 222, 233, 0.3);
     border-radius: 3px;
     color: rgba(var(--theme-body-sub-title-color), 1);
+}
+.badge {
     --bs-badge-font-weight: 500;
     padding: .625rem .9375rem;
     font-size: .875rem;
+    @include media-breakpoint-down(sm) {
+        font-size: .8125rem;
+    }
+}
+
+.badge-light-1 {
+    background-color: rgba(var(--info), 0.1);
+    color: rgba(var(--info), 1);
+}
+
+.badge-light-2 {
+    background-color: rgba(53, 156, 239, 0.1);
+    color: #359CEF;
+}
+
+.badge-light-3 {
+    background: rgba(115, 102, 255, 0.1);
+    color: #7366FF;
+}
+
+.badge-light-4 {
+    background: rgba(184, 72, 237, 0.05);
+    color: #B848ED;
 }
 
 .info {
