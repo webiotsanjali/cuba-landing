@@ -129,6 +129,10 @@ header {
         right: 0.75rem;
         stroke: rgba(var(--light-blue), 1);
 
+        @media (max-width:500px) {
+            display: none;
+        }
+
     }
 }
 
