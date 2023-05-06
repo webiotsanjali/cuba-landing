@@ -133,6 +133,11 @@ section {
         padding-bottom: 2.5rem;
     }
 }
+
+.bg-primary {
+    background-color: rgba(var(--primary), 1) !important;
+    color: rgba(var(--white), 1);
+}
 /**=====================
     Reset css end
 ==========================**/
