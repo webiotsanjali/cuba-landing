@@ -15,12 +15,15 @@
 @keyframes left-right {
   0% {
     transform: translateX(0);
+    transition: 0.5s;
   }
   50% {
      transform: translateX(3px);
+     transition: 0.5s;
  }
  100% {
    transform: translateX(0); 
+   transition: 0.5s;
  }
 }
 @-webkit-keyframes dash {
