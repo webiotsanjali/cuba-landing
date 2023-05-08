@@ -181,20 +181,24 @@ const home_slider1 = new Swiper(".home-slide-1", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 1,
-      spaceBetween: 12,
+      slidesPerView: 3,
+      spaceBetween: 1,
     },
     530: {
-      slidesPerView: 1,
-      spaceBetween: 18,
+      slidesPerView: 3,
+      spaceBetween: 1,
     },
     768: {
-      slidesPerView: 2,
-      spaceBetween: 18,
+      slidesPerView: 3,
+      spaceBetween: 2,
     },
     992: {
       slidesPerView: 3,
-      spaceBetween: 25,
+      spaceBetween: 1,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 10,
     },
   },
 });
