@@ -64,7 +64,7 @@
         }
         h3 {
             font-size: 1.125rem;
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(xxl) {
                 font-size: 1rem;
             }
         }
@@ -308,6 +308,110 @@
     }
     .review-slider-wrapper {
         margin: 0;
+    }
+}
+
+.review-style-3 {
+    .review-content {
+        display: flex;
+        align-items: center;
+        gap: .9375rem;
+        > div {
+            margin-top: .3125rem;
+        }
+        img {
+            min-width: 3.5625rem;
+            height: 3.5625rem;
+        }
+        h3 {
+            font-size: 1.125rem;
+            margin-bottom: .3125rem;
+            @include media-breakpoint-down(lg) {
+                font-size: 1rem;
+            }
+        }
+    }
+    .review-nav {
+        border-bottom: 1px solid rgba(var(--theme-body-sub-title-color), 0.2);
+        .swiper-slide {
+            padding-bottom: 1.875rem;
+            border-bottom: 3px solid transparent;
+            @include media-breakpoint-down(xxl) {
+                padding-bottom: 0.5rem;
+            }
+            &.swiper-slide-thumb-active {
+              border-bottom: 3px solid rgba(var(--primary), 1);  
+            }
+        }
+    }
+    .review-slider-3 {
+        padding-top: 1.875rem;
+        @include media-breakpoint-down(lg) {
+            padding-top: 1.5625rem;
+        }
+        @include media-breakpoint-down(md) {
+            padding-top: .9375rem;
+        }
+    }
+    .review-box {
+        background-image: url(../images/job/review-bg.webp);
+        padding: 1.875rem 2.5rem;
+        border-radius: .625rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include media-breakpoint-down(lg) {
+            padding: 1.5625rem;
+        }
+        p {
+            color: rgba(var(--white), 1);
+            height: 4.375rem;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            @include media-breakpoint-down(lg) {
+                height: 3.875rem;
+            }
+        }
+        .ratings {
+            gap: .3125rem;
+            justify-content: flex-end;
+            @include media-breakpoint-down(xl) {
+                justify-content: flex-start;
+            }
+            svg {
+                color: #FFC107;
+                font-size: .8125rem;
+            }
+        }
+        .quote-image {
+            position: absolute;
+            right: 1.875rem;
+            bottom: 1.25rem;
+            @include media-breakpoint-down(md) {
+                width: 5%;
+            }
+        }
+        .row {
+            > div {
+                &:last-child {
+                    @include media-breakpoint-down(xl) {
+                        order: -1;
+                    }
+                }
+            }
+        }
+    }
+    .review-details {
+        .btn {
+            padding-top: .375rem;
+            padding-bottom: .375rem;
+            margin-top: .9375rem;
+        }
+    }
+    .swiper-slide {
+        height: unset;
     }
 }
 

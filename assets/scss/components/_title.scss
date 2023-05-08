@@ -86,7 +86,7 @@
         position: relative;
         color: rgba(var(--theme-body-font-color), 1);
         padding-bottom: 1rem;
-        margin-bottom: 1.25rem;
+        margin-bottom: .9375rem;
         @include media-breakpoint-down(lg) {
             padding-bottom: 0.8rem;
             margin-bottom: 0.9rem;
@@ -111,7 +111,7 @@
     }
     p {
         width: 58%;
-        margin-bottom: 1.25rem;
+        margin-bottom: 1.875rem;
         @include media-breakpoint-down(xl) {
             width: 80%;
         }

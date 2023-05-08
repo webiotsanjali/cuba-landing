@@ -148,6 +148,21 @@ span {
     line-height: 1.5;
 }
 
+.layout-3 {
+    a {
+        svg {
+            font-size: .75rem;
+            transition: 0.5s;
+        }
+        &:hover {
+            .fa-arrow-right {
+                transform: translateX(3px);
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
 /**=====================
     Typography css end
 ==========================**/

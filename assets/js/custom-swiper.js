@@ -202,3 +202,32 @@ const home_slider1 = new Swiper(".home-slide-1", {
     },
   },
 });
+
+// review slider
+var review_swiper_nav = new Swiper(".review-nav", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 10,
+    },
+  }
+});
+var swiper2 = new Swiper(".review-slider-3", {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: review_swiper_nav,
+  },
+});
