@@ -1,10 +1,21 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const browsersync = require('browser-sync').create();
+// const gulp = require('gulp');
+// const sass = require('gulp-sass')(require('sass'));
+// const browsersync = require('browser-sync').create();
+// const livereload = require('gulp-livereload');
+// const sourcemaps = require('gulp-sourcemaps');
+// const reload = browsersync.reload;
+// const autoprefixer = require('gulp-autoprefixer');
+const autoprefixer = require("autoprefixer");
+const browsersync = require("browser-sync").create();
+var sass = require('gulp-sass')(require('sass'));
+const gulp = require("gulp");
+const cssnano = require("cssnano");
+const plumber = require("gulp-plumber");
+const postcss = require("gulp-postcss");
+const rename = require("gulp-rename");
 const livereload = require('gulp-livereload');
-const sourcemaps = require('gulp-sourcemaps');
-const reload = browsersync.reload;
-const autoprefixer = require('gulp-autoprefixer');
+const notify = require('gulp-notify');
+var reload = browsersync.reload;
 
 const paths = {
   css: {
@@ -41,31 +52,46 @@ gulp.task('css_file', function () {
 });
 
 /// Style Task ///
-gulp.task('scss', (e) => {
+gulp.task("scss", () => {
   return gulp
-    .src(paths.css.src)
-    .pipe(autoprefixer())
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-      //  outputStyle: 'compressed'
-    }).on('error', sass.logError))
-    .pipe(sourcemaps.write('.'))
-
-    .pipe(gulp.dest("./assets/css"))
+    .src("assets/scss/**/*.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    // .pipe(rename({
+    //   suffix: "."
+    // }))
+    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(gulp.dest("assets/css"))
+    // .pipe(notify({
+    //   message: "main SCSS processed"
+    // }))
     .pipe(browsersync.stream())
-    .pipe(livereload());
-  done();
+    .pipe(livereload())
 });
+// gulp.task('scss', (e) => {
+//   return gulp
+//     .src(paths.css.src)
+//     .pipe(autoprefixer())
+//     .pipe(sourcemaps.init())
+//     .pipe(sass({
+//       //  outputStyle: 'compressed'
+//     }).on('error', sass.logError))
+//     .pipe(sourcemaps.write('.'))
+
+//     .pipe(gulp.dest("./assets/css"))
+//     .pipe(browsersync.stream())
+//     .pipe(livereload());
+//   done();
+// });
 
 /// Browser Sync Task ///
 gulp.task('browser-sync', async function (done) {
   browsersync.init({
-    base: './',
     server: './',
     startPath: 'html/index.html',
     host: 'localhost',
     open: true,
-    tunnel: false,
+    tunnel: true
   });
   gulp.watch("html/*.html").on("change", reload);
   // done();

@@ -87,6 +87,14 @@
         color: rgba(var(--theme-body-font-color), 1);
         padding-bottom: 1rem;
         margin-bottom: 1.25rem;
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 0.8rem;
+            margin-bottom: 0.9rem;
+        }
+        @include media-breakpoint-down(sm) {
+            padding-bottom: 0.5rem;
+            margin-bottom: 0.7rem
+        }
         &::after {
             position: absolute;
             content: '';
@@ -95,6 +103,10 @@
             bottom: 0;
             background-image: url(../images/shape/7.webp);
             background-size: cover;
+            @include media-breakpoint-down(lg) {
+                height: .3125rem;
+                width: 6rem;
+            }
         }
     }
     p {
@@ -102,6 +114,12 @@
         margin-bottom: 1.25rem;
         @include media-breakpoint-down(xl) {
             width: 80%;
+        }
+        @include media-breakpoint-down(lg) {
+            width: 95%;
+        }
+        @include media-breakpoint-down(md) {
+            width: 100%;
         }
     }
     &.text-center {

@@ -100,6 +100,49 @@
         }
     }
 }
+.about-style-3 {
+    .about-content {
+        .title-style-2 {
+            h2 {
+                &::after {
+                    left: 0;
+                }
+            }
+        }
+        p {
+            margin-block: 1.875rem;
+            @include media-breakpoint-down(md) {
+                 margin-block: 1.25rem;
+            }
+        }
+        a {
+            svg {
+                font-size: .75rem;
+            }
+        }
+    }
+    .left-image {
+        margin-top: -38%;
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+    .about-image-wrapper {
+        @include media-breakpoint-up(sm) {
+            margin-bottom: -1.625rem;
+        }
+    }
+    .row {
+        > div {
+            &:last-child {
+                @include media-breakpoint-down(lg) {
+                    order: -1;
+                }
+            }
+        }
+    }
+}
+
 /**=====================
     About css end
 ==========================**/
