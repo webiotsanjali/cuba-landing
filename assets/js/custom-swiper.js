@@ -223,11 +223,46 @@ var review_swiper_nav = new Swiper(".review-nav", {
       slidesPerView: 4,
       spaceBetween: 10,
     },
-  }
+  },
 });
 var swiper2 = new Swiper(".review-slider-3", {
   spaceBetween: 10,
   thumbs: {
     swiper: review_swiper_nav,
+  },
+});
+
+const category_slider_1 = new Swiper(".category-slider-1", {
+  slidesPerView: 7,
+  spaceBetween: 22,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 12,
+    },
+    400: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    500: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 0,
+    },
+    992: {
+      slidesPerView: 6,
+      spaceBetween: 0,
+    },
+    1200: {
+      slidesPerView: 7,
+      spaceBetween: 22,
+    },
   },
 });
