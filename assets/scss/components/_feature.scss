@@ -158,6 +158,58 @@
         }
     }
 }
+.feature-style-3 {
+    .feature-box {
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(var(--service-shadow),.04),0 8.69547px 6.95638px rgba(var(--service-shadow),.06),0 4.6181px 3.69448px rgba(var(--service-shadow),.0484671),0 1.9217px 1.53736px rgba(var(--service-shadow),.0337375);
+        .feature-content {
+            padding: 1.5625rem .9375rem;
+            @include media-breakpoint-down(sm) {
+                padding: .9375rem;
+            }
+            .feature-icon {
+                box-shadow: 0 10px 10px rgba(var(--service-shadow),.04),0 8.69547px 6.95638px rgba(var(--service-shadow),.06),0 4.6181px 3.69448px rgba(var(--service-shadow),.0484671),0 1.9217px 1.53736px rgba(var(--service-shadow),.0337375);
+                border-radius: 5px;
+                width: 3.625rem;
+                height: 3.625rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                @include media-breakpoint-down(sm) {
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+            h3 {
+                font-size: 1.125rem;
+                margin-top: .9375rem;
+                margin-bottom: .3125rem;
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: .125rem;
+                }
+            }
+            p {
+                margin-top: .625rem;
+                @include media-breakpoint-down(xxl) {
+                    font-size: .875rem;
+                }
+            }
+            .d-flex {
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .feature-footer {
+            padding: .9375rem;
+            border-top: 1px solid rgba(var(--theme-body-sub-title-color), 0.1);
+            a {
+                font-size: .875rem;
+            }
+        }
+    }
+}
 /**=====================
     Feature css end
 ==========================**/

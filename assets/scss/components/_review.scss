@@ -380,10 +380,6 @@
             @include media-breakpoint-down(xl) {
                 justify-content: flex-start;
             }
-            svg {
-                color: #FFC107;
-                font-size: .8125rem;
-            }
         }
         .quote-image {
             position: absolute;

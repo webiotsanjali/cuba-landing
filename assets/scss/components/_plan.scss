@@ -211,6 +211,110 @@
     }
 }
 
+.plan-style-3 {
+    .plan-card {
+        border: 1px solid rgba(82, 82, 108, 0.1);
+        box-shadow: 0px 10px 10px rgba(var(--service-shadow), 0.04), 0px 8.69547px 6.95638px rgba(var(--service-shadow), 0.06), 0px 4.6181px 3.69448px rgba(var(--service-shadow), 0.0484671), 0px 1.9217px 1.53736px rgba(var(--service-shadow), 0.0337375);
+        border-radius: .625rem;
+        padding: 1.875rem;
+        @include media-breakpoint-down(md) {
+            padding: 1.25rem;
+        }
+        .plan-price {
+            display: flex;
+            gap: .9375rem;
+            margin-bottom: 1.25rem;
+            h6 {
+                font-size: 1rem;
+                margin-bottom: .3125rem;
+                @include media-breakpoint-down(sm) {
+                    font-size: .875rem;
+                }
+            }
+            h3 {
+                margin-right: .625rem;
+            }
+            span {
+                margin-bottom: 4px;
+                @include media-breakpoint-down(lg) {
+                    margin-bottom: 2px;
+                }
+            }
+            > img {
+                height: 3.125rem;
+                @include media-breakpoint-down(sm) {
+                    height: 2.5rem;
+                }
+            }
+            .d-flex {
+                flex-wrap: wrap;
+            }
+        }
+        .plan-list {
+            display: flex;
+            flex-direction: column;
+            gap: .9375rem;
+            margin-top: 1.25rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(82, 82, 108, 0.2);
+            @include media-breakpoint-down(md) {
+                gap: .5rem;
+                margin-top: .625rem;
+                padding-top: .625rem;
+            }
+            li {
+               display: flex;
+               align-items: center;
+               gap: 1.25rem;
+               @include media-breakpoint-down(md) {
+                gap: .3125rem;
+               }
+               svg {
+                    color: rgba(var(--success), 1);
+               }
+               p {
+                span {
+                    font-weight: 500;
+                    color: rgba(var(--theme-body-font-color), 1);
+                }
+               }
+            }
+        }
+        .btn {
+            width: 100%;
+            margin-top: 1.5625rem;
+        }
+        &:hover {
+            background-image: url(../images/job/bg-plan.webp);
+            background-size: cover;
+            color: rgba(var(--white), 1);
+            p, .txt-light {
+                color: rgba(var(--white), 1);
+            }
+            .btn-light-primary {
+                background-color: rgba(var(--white), 1);
+                color: rgba(var(--primary), 1);
+            }
+            .plan-list {
+                border-top: 1px solid rgba(var(--white), 0.5);
+                li {
+                    p {
+                        span {
+                            color: rgba(var(--white), 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .plan-slider-wrapper {
+        margin-bottom: -0.625rem;
+        .swiper {
+            padding-bottom: .625rem;
+        }
+    }
+} 
+
 /**=====================
     Plan css end
 ==========================**/

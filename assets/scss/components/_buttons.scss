@@ -76,6 +76,16 @@
         color: rgba(var(--primary), 1);
     }
 }
+
+.btn-light-primary {
+    color: rgba(var(--primary), 1);
+    background-color: rgba(var(--primary), 0.1);
+    &:hover {
+        background-color: rgba(var(--white), 1);
+        color: rgba(var(--primary), 1);
+    }
+}
+
 /**=====================
     Buttons css end
 ==========================**/

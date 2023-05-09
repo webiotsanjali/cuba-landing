@@ -191,6 +191,74 @@
         }
     }
 }
+.footer-style-2 {
+    .main-footer {
+        padding-top: 2.5rem;
+        @include media-breakpoint-down(md) {
+            padding-top: 1.875rem;
+        }
+        .footer-contact {
+            height: 100%;
+        }
+        .footer-content {
+            border-right: 1px solid #272445;
+        }
+        &:after {
+            display: none;
+        }
+        .row {
+            > div {
+                &:last-child {
+                    .footer-content {
+                        border-right: unset;
+                    }
+                }
+            }
+        }
+    }
+    .footer-top-content {
+        padding-top: 3.125rem;
+        padding-bottom: 2.5rem;
+        border-bottom: 1px solid #272445;
+        @include media-breakpoint-down(md) {
+            padding-top: 2.5rem;
+            padding-bottom: 1.875rem;
+        }
+        .footer-right {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1.5625rem;
+            @include media-breakpoint-down(lg) {
+                justify-content: flex-start;
+            }
+            @include media-breakpoint-down(md) {
+                gap: .625rem;
+            }
+        }
+        .footer-top {
+            h3 {
+                font-size: 1.625rem;
+                margin-bottom: .625rem;
+                @include media-breakpoint-down(lg) {
+                   font-size: 1.375rem; 
+                }
+                @include media-breakpoint-down(md) {
+                   font-size: 1.25rem; 
+                }
+                @include media-breakpoint-down(sm) {
+                   font-size: 1rem; 
+                }
+            }
+            p {
+                color: rgba(var(--white), 1);
+            }
+        }
+        .btn-dark {
+            background: #242438;
+            border-color: #242438;
+        }
+    }
+}
 
 /**=====================
    Footer css end

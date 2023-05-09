@@ -161,6 +161,13 @@ span {
             }
         }
     }
+    .ratings {
+        gap: .3125rem;
+        svg {
+            font-size: .8125rem;
+            color: #FFC107;
+        }
+    }
 }
 
 /**=====================
