@@ -102,17 +102,17 @@
                             <div class="swiper home-slide-1">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <div class="home-slider">
+                                        <div class="home-image">
                                             <img src="../assets/images/nft/slider/2.webp" alt="vector-cat">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="home-slider">
+                                        <div class="home-image">
                                             <img src="../assets/images/nft/slider/1.webp" alt="vector-cat">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <div class="home-slider">
+                                        <div class="home-image">
                                             <img src="../assets/images/nft/slider/3.webp" alt="vector-cat">
                                         </div>
                                     </div>
@@ -292,85 +292,560 @@
         <!-- Collection section start -->
         <section class="collection-style-1">
             <div class="container">
-                <div class="title-style-4 row">
-                    <div class="col-12">
+                <div class="title-style-4 row g-4">
+                    <div class="col-6">
                         <h2>We have<span class="txt-success"> 5,000+</span> Collection</h2>
                         <p class="mb-3">Here's four easily steps to create and sell your NFTs in Metovo Market</p>
                         <img src="../assets/images/nft/line.webp" alt="line" class="img-fluid">
                     </div>
                 </div>
                 <div class="collection-filter brand-style-4">
-                    <button class="btn brand-box all">All</button>
-                    <button class="btn brand-box art">Digital Art</button>
-                    <button class="btn brand-box music">Music</button>
-                    <button class="btn brand-box video">Video</button>
-                    <button class="btn brand-box collectribles">Collectibles</button>
-                    <button class="btn brand-box sports">Sports</button>
-                    <button class="btn brand-box utility">Utility</button>
-                    <button class="btn brand-box photography">Photography</button>
+                    <button class="btn brand-box active" data-filter="*">All</button>
+                    <button class="btn brand-box" data-filter=".art">Digital Art</button>
+                    <button class="btn brand-box" data-filter=".music">Music</button>
+                    <button class="btn brand-box" data-filter=".video">Video</button>
+                    <button class="btn brand-box" data-filter=".sports">Sports</button>
+                    <button class="btn brand-box" data-filter=".photography">Photography</button>
                 </div>
-                <div class="collection-main-wrapper row row-cols-xl-5">
-                    <div class="collection-box col">
-                        <div class="collection-img">
-                            <img src="../assets/images/nft/collection/1.webp" alt="3D-nft-collection">
-                            <img src="../assets/images/nft/collection/avatar/1.webp" alt="avatar">
-                        </div>
-                        <div class="collection-content">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="content-title">
-                                    <span>Julian Canne</span>
-                                    <svg>
-                                        <use href="../assets/svg/icon_sprite.svg#successful"></use>
-                                    </svg>
-                                </div>
-                                <a href="#">
-                                    <i class="fa-solid fa-ellipsis"></i>
-                                </a>
+                <div
+                    class="collection-main-wrapper row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-2 g-3">
+                    <div class="col items art">
+                        <div class="collection-box filtered-product">
+                            <div class="collection-image">
+                                <img src="../assets/images/nft/collection/1.webp" alt="NFT"
+                                    class="img-fluid product-image">
+                                <img src="../assets/images/nft/collection/shape.webp" alt="shape"
+                                    class="img-fluid right-shape">
+                                <img src="../assets/images/nft/collection/avatar/1.webp" alt="profile"
+                                    class="img-fluid">
                             </div>
-
-                            <h6 class="collection-title">
-                                <a href="#">Cool Cat 3D #6124</a>
-                            </h6>
-                            <div class="etherum-title">
-                                <div>
-                                    <svg>
-                                        <use href="../assets/svg/icon_sprite.svg#etherium"></use>
-                                    </svg>
-                                    <p>1.45 ETH</p>
+                            <div class="collection-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="content-title">
+                                        <span>Julian Canne</span>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#successful"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="on-hover brand-style-4">
+                                        <button aria-label="more">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                        <ul class="on-hover-show brand-box">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-regular fa-share-from-square me-2"></i>
+                                                    <span>Share</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-sharp fa-regular fa-flag me-2"></i>
+                                                    <span>Report</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <a href="#" class="txt-success">Buy Now</a>
+
+                                <h6 class="collection-title">
+                                    <a href="#">Cool Cat 3D #6124</a>
+                                </h6>
+                                <div class="etherum-title">
+                                    <div>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#etherium"></use>
+                                        </svg>
+                                        <p>1.45 ETH</p>
+                                    </div>
+                                    <a href="#">Buy Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="collection-box col">
-                        <div class="collection-img">
-                            <img src="../assets/images/nft/collection/2.webp" alt="3D-nft-collection">
-                            <img src="../assets/images/nft/collection/avatar/1.webp" alt="avatar">
-                        </div>
-                        <div class="collection-content">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="content-title">
-                                    <span>Julian Canne</span>
-                                    <svg>
-                                        <use href="../assets/svg/icon_sprite.svg#successful"></use>
-                                    </svg>
-                                </div>
-                                <a href="#">
-                                    <i class="fa-solid fa-ellipsis"></i>
-                                </a>
+                    <div class="col items video">
+                        <div class="collection-box filtered-product">
+                            <div class="collection-image">
+                                <img src="../assets/images/nft/collection/2.webp" alt="NFT"
+                                    class="img-fluid product-image">
+                                <img src="../assets/images/nft/collection/shape.webp" alt="shape"
+                                    class="img-fluid right-shape">
+                                <img src="../assets/images/nft/collection/avatar/2.webp" alt="profile"
+                                    class="img-fluid">
                             </div>
-
-                            <h6 class="collection-title">
-                                <a href="#">Cool Cat 3D #6124</a>
-                            </h6>
-                            <div class="etherum-title">
-                                <div>
-                                    <svg>
-                                        <use href="../assets/svg/icon_sprite.svg#etherium"></use>
-                                    </svg>
-                                    <p>1.45 ETH</p>
+                            <div class="collection-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="content-title">
+                                        <span>Jenny Wilson</span>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#successful"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="on-hover brand-style-4">
+                                        <button aria-label="more">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                        <ul class="on-hover-show brand-box">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-regular fa-share-from-square me-2"></i>
+                                                    <span>Share</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-sharp fa-regular fa-flag me-2"></i>
+                                                    <span>Report</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <a href="#" class="txt-success">Buy Now</a>
+
+                                <h6 class="collection-title">
+                                    <a href="#">Cool Cat 3D #6125</a>
+                                </h6>
+                                <div class="etherum-title">
+                                    <div>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#etherium"></use>
+                                        </svg>
+                                        <p>1.45 ETH</p>
+                                    </div>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col items music">
+                        <div class="collection-box filtered-product">
+                            <div class="collection-image">
+                                <img src="../assets/images/nft/collection/3.webp" alt="NFT"
+                                    class="img-fluid product-image">
+                                <img src="../assets/images/nft/collection/shape.webp" alt="shape"
+                                    class="img-fluid right-shape">
+                                <img src="../assets/images/nft/collection/avatar/3.webp" alt="profile"
+                                    class="img-fluid">
+                            </div>
+                            <div class="collection-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="content-title">
+                                        <span>Julian Canne</span>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#successful"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="on-hover brand-style-4">
+                                        <button aria-label="more">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                        <ul class="on-hover-show brand-box">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-regular fa-share-from-square me-2"></i>
+                                                    <span>Share</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-sharp fa-regular fa-flag me-2"></i>
+                                                    <span>Report</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <h6 class="collection-title">
+                                    <a href="#">Cool Cat 3D #8575</a>
+                                </h6>
+                                <div class="etherum-title">
+                                    <div>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#etherium"></use>
+                                        </svg>
+                                        <p>1.45 ETH</p>
+                                    </div>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col items sports">
+                        <div class="collection-box filtered-product">
+                            <div class="collection-image">
+                                <img src="../assets/images/nft/collection/4.webp" alt="NFT"
+                                    class="img-fluid product-image">
+                                <img src="../assets/images/nft/collection/shape.webp" alt="shape"
+                                    class="img-fluid right-shape">
+                                <img src="../assets/images/nft/collection/avatar/4.webp" alt="profile"
+                                    class="img-fluid">
+                            </div>
+                            <div class="collection-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="content-title">
+                                        <span>Darlene Robertson</span>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#successful"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="on-hover brand-style-4">
+                                        <button aria-label="more">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                        <ul class="on-hover-show brand-box">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-regular fa-share-from-square me-2"></i>
+                                                    <span>Share</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-sharp fa-regular fa-flag me-2"></i>
+                                                    <span>Report</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <h6 class="collection-title">
+                                    <a href="#">Cool Cat 3D #9565</a>
+                                </h6>
+                                <div class="etherum-title">
+                                    <div>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#etherium"></use>
+                                        </svg>
+                                        <p>1.45 ETH</p>
+                                    </div>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col items photography">
+                        <div class="collection-box filtered-product">
+                            <div class="collection-image">
+                                <img src="../assets/images/nft/collection/5.webp" alt="NFT"
+                                    class="img-fluid product-image">
+                                <img src="../assets/images/nft/collection/shape.webp" alt="shape"
+                                    class="img-fluid right-shape">
+                                <img src="../assets/images/nft/collection/avatar/5.webp" alt="profile"
+                                    class="img-fluid">
+                            </div>
+                            <div class="collection-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="content-title">
+                                        <span>Savannah Nguyen</span>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#successful"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="on-hover brand-style-4">
+                                        <button aria-label="more">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                        <ul class="on-hover-show brand-box">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-regular fa-share-from-square me-2"></i>
+                                                    <span>Share</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-sharp fa-regular fa-flag me-2"></i>
+                                                    <span>Report</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <h6 class="collection-title">
+                                    <a href="#">Cool Cat 3D #3590</a>
+                                </h6>
+                                <div class="etherum-title">
+                                    <div>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#etherium"></use>
+                                        </svg>
+                                        <p>1.45 ETH</p>
+                                    </div>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col items photography">
+                        <div class="collection-box filtered-product">
+                            <div class="collection-image">
+                                <img src="../assets/images/nft/collection/6.webp" alt="NFT"
+                                    class="img-fluid product-image">
+                                <img src="../assets/images/nft/collection/shape.webp" alt="shape"
+                                    class="img-fluid right-shape">
+                                <img src="../assets/images/nft/collection/avatar/6.webp" alt="profile"
+                                    class="img-fluid">
+                            </div>
+                            <div class="collection-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="content-title">
+                                        <span>Kathryn Murphy</span>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#successful"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="on-hover brand-style-4">
+                                        <button aria-label="more">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                        <ul class="on-hover-show brand-box">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-regular fa-share-from-square me-2"></i>
+                                                    <span>Share</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-sharp fa-regular fa-flag me-2"></i>
+                                                    <span>Report</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <h6 class="collection-title">
+                                    <a href="#">Cool Cat 3D #6512</a>
+                                </h6>
+                                <div class="etherum-title">
+                                    <div>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#etherium"></use>
+                                        </svg>
+                                        <p>1.45 ETH</p>
+                                    </div>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col items art">
+                        <div class="collection-box filtered-product">
+                            <div class="collection-image">
+                                <img src="../assets/images/nft/collection/7.webp" alt="NFT"
+                                    class="img-fluid product-image">
+                                <img src="../assets/images/nft/collection/shape.webp" alt="shape"
+                                    class="img-fluid right-shape">
+                                <img src="../assets/images/nft/collection/avatar/7.webp" alt="profile"
+                                    class="img-fluid">
+                            </div>
+                            <div class="collection-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="content-title">
+                                        <span>Cody Fisher</span>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#successful"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="on-hover brand-style-4">
+                                        <button aria-label="more">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                        <ul class="on-hover-show brand-box">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-regular fa-share-from-square me-2"></i>
+                                                    <span>Share</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-sharp fa-regular fa-flag me-2"></i>
+                                                    <span>Report</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <h6 class="collection-title">
+                                    <a href="#">Cool Cat 3D #9087</a>
+                                </h6>
+                                <div class="etherum-title">
+                                    <div>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#etherium"></use>
+                                        </svg>
+                                        <p>1.45 ETH</p>
+                                    </div>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col items music">
+                        <div class="collection-box filtered-product">
+                            <div class="collection-image">
+                                <img src="../assets/images/nft/collection/8.webp" alt="NFT"
+                                    class="img-fluid product-image">
+                                <img src="../assets/images/nft/collection/shape.webp" alt="shape"
+                                    class="img-fluid right-shape">
+                                <img src="../assets/images/nft/collection/avatar/8.webp" alt="profile"
+                                    class="img-fluid">
+                            </div>
+                            <div class="collection-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="content-title">
+                                        <span>Devon Lane</span>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#successful"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="on-hover brand-style-4">
+                                        <button aria-label="more">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                        <ul class="on-hover-show brand-box">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-regular fa-share-from-square me-2"></i>
+                                                    <span>Share</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-sharp fa-regular fa-flag me-2"></i>
+                                                    <span>Report</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <h6 class="collection-title">
+                                    <a href="#">Cool Cat 3D #1456</a>
+                                </h6>
+                                <div class="etherum-title">
+                                    <div>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#etherium"></use>
+                                        </svg>
+                                        <p>1.45 ETH</p>
+                                    </div>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col items video">
+                        <div class="collection-box filtered-product">
+                            <div class="collection-image">
+                                <img src="../assets/images/nft/collection/9.webp" alt="NFT"
+                                    class="img-fluid product-image">
+                                <img src="../assets/images/nft/collection/shape.webp" alt="shape"
+                                    class="img-fluid right-shape">
+                                <img src="../assets/images/nft/collection/avatar/9.webp" alt="profile"
+                                    class="img-fluid">
+                            </div>
+                            <div class="collection-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="content-title">
+                                        <span>Eleanor Pena</span>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#successful"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="on-hover brand-style-4">
+                                        <button aria-label="more">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                        <ul class="on-hover-show brand-box">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-regular fa-share-from-square me-2"></i>
+                                                    <span>Share</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-sharp fa-regular fa-flag me-2"></i>
+                                                    <span>Report</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <h6 class="collection-title">
+                                    <a href="#">Cool Cat 3D #6509</a>
+                                </h6>
+                                <div class="etherum-title">
+                                    <div>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#etherium"></use>
+                                        </svg>
+                                        <p>1.45 ETH</p>
+                                    </div>
+                                    <a href="#">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col items sports">
+                        <div class="collection-box filtered-product">
+                            <div class="collection-image">
+                                <img src="../assets/images/nft/collection/10.webp" alt="NFT"
+                                    class="img-fluid product-image">
+                                <img src="../assets/images/nft/collection/shape.webp" alt="shape"
+                                    class="img-fluid right-shape">
+                                <img src="../assets/images/nft/collection/avatar/10.webp" alt="profile"
+                                    class="img-fluid">
+                            </div>
+                            <div class="collection-content">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="content-title">
+                                        <span>Devon Lane</span>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#successful"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="on-hover brand-style-4">
+                                        <button aria-label="more">
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </button>
+                                        <ul class="on-hover-show brand-box">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-regular fa-share-from-square me-2"></i>
+                                                    <span>Share</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa-sharp fa-regular fa-flag me-2"></i>
+                                                    <span>Report</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <h6 class="collection-title">
+                                    <a href="#">Cool Cat 3D #0234</a>
+                                </h6>
+                                <div class="etherum-title">
+                                    <div>
+                                        <svg>
+                                            <use href="../assets/svg/icon_sprite.svg#etherium"></use>
+                                        </svg>
+                                        <p>1.45 ETH</p>
+                                    </div>
+                                    <a href="#">Buy Now</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -380,6 +855,8 @@
         <!-- Collection section end -->
     </main>
 
+    <!-- latest jquery -->
+    <script src="../assets/js/vendors/isotope/jquery.min.js"></script>
 
     <!-- bootstrap js -->
     <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -391,8 +868,13 @@
     <!-- font awesome js -->
     <script src="../assets/js/vendors/fontawesome/all.min.js"></script>
 
+    <!-- isotope js -->
+    <script src="../assets/js/vendors/isotope/isotope.pkgd.min.js"></script>
 
     <script src="../assets/js/script.js"></script>
+
+    <!-- custom-filter js -->
+    <script src="../assets/js/custom-filter.js"></script>
 
 
 </body>
