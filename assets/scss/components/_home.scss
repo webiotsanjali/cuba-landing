@@ -350,14 +350,14 @@
     .home-content {
         width: 100%;
         padding-top: 0;
-        padding-bottom: 3.8rem;
+        padding-bottom: 3rem;
 
         @media (max-width: 1459px) {
-            padding-bottom: 3.2rem;
+            padding-bottom: 2.4rem;
         }
 
         @include media-breakpoint-down(xxl) {
-            padding-bottom: 2rem;
+            padding-bottom: 1.1rem;
         }
         @include media-breakpoint-down(lg) {
             padding-bottom: 0;

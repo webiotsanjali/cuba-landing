@@ -107,6 +107,12 @@
                 &::after {
                     left: 0;
                 }
+                @include media-breakpoint-down(lg) {
+                    margin-top: -0.5625rem;
+                }
+                @include media-breakpoint-down(sm) {
+                    margin-top: -0.4375rem;
+                }
             }
         }
         p {
