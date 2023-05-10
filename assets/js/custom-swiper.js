@@ -6,7 +6,7 @@ const brand_swiper1 = new Swiper(".brand-slider-1", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 12,
     },
     420: {

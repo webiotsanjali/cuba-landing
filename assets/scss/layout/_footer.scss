@@ -213,6 +213,13 @@
                         border-right: unset;
                     }
                 }
+                &:nth-child(3) {
+                    @include media-breakpoint-down(md) {
+                        .footer-content {
+                            border-right: unset;
+                        }
+                    }
+                }
             }
         }
     }

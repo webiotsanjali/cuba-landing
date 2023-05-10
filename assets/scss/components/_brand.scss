@@ -12,9 +12,15 @@
         height: 68px;
         object-fit: cover;
         transition: 0.5s;
+        @include media-breakpoint-down(sm) {
+            height: 52px;
+        }
         img {
             filter: grayscale(1);
             transition: 0.5s;
+            @include media-breakpoint-down(sm) {
+                height: 20px;
+            }
         }
         &:hover {
             border: 1px solid rgba(var(--primary), 1);
