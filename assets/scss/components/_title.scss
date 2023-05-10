@@ -87,13 +87,16 @@
         color: rgba(var(--theme-body-font-color), 1);
         padding-bottom: 1rem;
         margin-bottom: .9375rem;
+        margin-top: -0.5rem;
         @include media-breakpoint-down(lg) {
             padding-bottom: 0.8rem;
             margin-bottom: 0.9rem;
+             margin-top: -6px;
         }
         @include media-breakpoint-down(sm) {
             padding-bottom: 0.5rem;
-            margin-bottom: 0.7rem
+            margin-bottom: 0.7rem;
+            margin-top: -4px;
         }
         &::after {
             position: absolute;
@@ -120,6 +123,7 @@
         }
         @include media-breakpoint-down(md) {
             width: 100%;
+           margin-bottom: 1.25rem;
         }
     }
     &.text-center {
