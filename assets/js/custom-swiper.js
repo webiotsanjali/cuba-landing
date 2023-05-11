@@ -173,7 +173,7 @@ const plan_swiper2 = new Swiper(".plan-slider-2", {
 
 const home_slider1 = new Swiper(".home-slide-1", {
   slidesPerView: 3,
-  spaceBetween: 1,
+  spaceBetween: 0,
   loop: true,
   centeredSlides: true,
   autoplay: {
@@ -198,7 +198,7 @@ const home_slider1 = new Swiper(".home-slide-1", {
     },
     1000: {
       slidesPerView: 3,
-      spaceBetween: 10,
+      spaceBetween: 0,
     },
   },
 });
@@ -225,6 +225,41 @@ var review_swiper_nav = new Swiper(".review-nav", {
     },
   },
 });
+
+const brand_swiper4 = new Swiper(".brand-slider-4", {
+  slidesPerView: 6,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 2000,
+  },
+  navigation: {
+    prevEl: ".slidePrev-btn",
+    nextEl: ".slideNext-btn",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 12,
+    },
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 18,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 18,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 18,
+    },
+    1200: {
+      slidesPerView: 6,
+      spaceBetween: 18,
+    },
+  },
+});
+
 var swiper2 = new Swiper(".review-slider-3", {
   spaceBetween: 10,
   thumbs: {
@@ -233,6 +268,42 @@ var swiper2 = new Swiper(".review-slider-3", {
 });
 
 const category_slider_1 = new Swiper(".category-slider-1", {
+  slidesPerView: 7,
+  spaceBetween: 22,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 12,
+    },
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    400: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 0,
+    },
+    992: {
+      slidesPerView: 6,
+      spaceBetween: 0,
+    },
+    1200: {
+      slidesPerView: 7,
+      spaceBetween: 22,
+    },
+  },
+});
+
+// collection
+const collection_slider_1 = new Swiper(".collection-slider-1", {
   slidesPerView: 7,
   spaceBetween: 22,
   loop: true,
@@ -263,6 +334,49 @@ const category_slider_1 = new Swiper(".category-slider-1", {
     1200: {
       slidesPerView: 7,
       spaceBetween: 22,
+    },
+  },
+});
+
+const creator_slider_1 = new Swiper(".creator-slider-1", {
+  slidesPerView: 8,
+  spaceBetween: 0,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  },
+  navigation: {
+    prevEl: ".slidePrev-btn",
+    nextEl: ".slideNext-btn",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 12,
+    },
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    385: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    520: {
+      slidesPerView: 4,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 0,
+    },
+    992: {
+      slidesPerView: 6,
+      spaceBetween: 0,
+    },
+    1200: {
+      slidesPerView: 8,
+      spaceBetween: 0,
     },
   },
 });
