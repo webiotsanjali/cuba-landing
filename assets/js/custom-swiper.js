@@ -380,3 +380,46 @@ const creator_slider_1 = new Swiper(".creator-slider-1", {
     },
   },
 });
+
+const newest_slider_1 = new Swiper(".newest-slider-1", {
+  slidesPerView: 8,
+  spaceBetween: 0,
+  loop: true,
+  autoplay: {
+    delay: 2000,
+  },
+  navigation: {
+    prevEl: ".slidePrev-btn",
+    nextEl: ".slideNext-btn",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 12,
+    },
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    385: {
+      slidesPerView: 3,
+      spaceBetween: 0,
+    },
+    520: {
+      slidesPerView: 4,
+      spaceBetween: 0,
+    },
+    768: {
+      slidesPerView: 5,
+      spaceBetween: 0,
+    },
+    992: {
+      slidesPerView: 6,
+      spaceBetween: 0,
+    },
+    1200: {
+      slidesPerView: 8,
+      spaceBetween: 0,
+    },
+  },
+});
