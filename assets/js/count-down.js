@@ -89,14 +89,14 @@ document.addEventListener("readystatechange", (event) => {
         } else {
           countDownDate[i]["el"].querySelector(".days") &&
             (countDownDate[i]["el"].querySelector(".days").innerHTML =
-              countDownDate[i]["days"]);
+              countDownDate[i]["days"] + "<span>d</span>");
           // countDownDate[i]['el'].querySelector('.days').innerHTML = countDownDate[i]['days'];
           countDownDate[i]["el"].querySelector(".hours").innerHTML =
-            countDownDate[i]["hours"];
+            countDownDate[i]["hours"] + "<span>h</span>";
           countDownDate[i]["el"].querySelector(".minutes").innerHTML =
-            countDownDate[i]["minutes"];
+            countDownDate[i]["minutes"] + "<span>m</span>";
           countDownDate[i]["el"].querySelector(".seconds").innerHTML =
-            countDownDate[i]["seconds"];
+            countDownDate[i]["seconds"] + "<span>s</span>";
         }
       }
     }, 1000);
