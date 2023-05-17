@@ -203,6 +203,35 @@ span {
     }
 }
 
+.layout-4 {
+    background-color: rgba(var(--dark-bg), 1);
+    position: relative;
+
+    &::before {
+        background-image: url(../images/nft/bg.webp);
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        mix-blend-mode: overlay;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: rgba(var(--white), 1);
+    }
+
+    p {
+        color: rgba(var(--light-blue), 1);
+    }
+}
+
 /**=====================
     Typography css end
 ==========================**/

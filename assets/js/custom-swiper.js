@@ -397,7 +397,6 @@ const newest_slider_1 = new Swiper(".newest-slider-1", {
 });
 
 const collection_swiper = new Swiper(".collection-slider-1", {
-  // effect: "coverflow",
   grabCursor: true,
   spaceBetween: 40,
   centeredSlides: true,

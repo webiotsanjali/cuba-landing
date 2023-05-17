@@ -88,16 +88,19 @@
         padding-bottom: 1rem;
         margin-bottom: .9375rem;
         margin-top: -0.5rem;
+
         @include media-breakpoint-down(lg) {
             padding-bottom: 0.8rem;
             margin-bottom: 0.9rem;
-             margin-top: -6px;
+            margin-top: -6px;
         }
+
         @include media-breakpoint-down(sm) {
             padding-bottom: 0.5rem;
             margin-bottom: 0.7rem;
             margin-top: -4px;
         }
+
         &::after {
             position: absolute;
             content: '';
@@ -106,26 +109,32 @@
             bottom: 0;
             background-image: url(../images/shape/7.webp);
             background-size: cover;
+
             @include media-breakpoint-down(lg) {
                 height: .3125rem;
                 width: 6rem;
             }
         }
     }
+
     p {
         width: 58%;
         margin-bottom: 1.875rem;
+
         @include media-breakpoint-down(xl) {
             width: 80%;
         }
+
         @include media-breakpoint-down(lg) {
             width: 95%;
         }
+
         @include media-breakpoint-down(md) {
             width: 100%;
-           margin-bottom: 1.25rem;
+            margin-bottom: 1.25rem;
         }
     }
+
     &.text-center {
         h2 {
             &::after {
@@ -133,9 +142,43 @@
                 transform: translateX(-50%);
             }
         }
+
         p {
             margin-inline: auto;
         }
+    }
+}
+
+.title-style-4 {
+    padding-bottom: 1.875rem;
+    align-items: center;
+
+    h2 {
+        margin-top: -0.9375rem;
+
+        @include media-breakpoint-down(xl) {
+            margin-top: -0.75rem;
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-top: -0.625rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-top: -0.5rem;
+        }
+    }
+
+    p {
+        margin-bottom: .625rem;
+
+        @include media-breakpoint-down(xl) {
+            margin-bottom: .3125rem;
+        }
+    }
+
+    img {
+        width: 55%;
     }
 }
 
