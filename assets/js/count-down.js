@@ -1,78 +1,53 @@
-function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  console.log("t 98", t);
-
-  /***** CONVERT THE TIME TO A USEABLE FORMAT *****/
-  var seconds = Math.floor((t / 1000) % 60);
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-
-  /***** OUTPUT THE CLOCK DATA AS A REUSABLE OBJECT *****/
-  return {
-    total: t,
-    days: days,
-    hours: hours,
-    minutes: minutes,
-    seconds: seconds,
-  };
-}
-
-const timers = document.querySelectorAll(".timer");
-
-/*--------Day and  Time loop---------*/
-timers.forEach((timer) => {
-  const targetDate = new Date(timer.dataset.date);
-  const timerInterval = setInterval(() => {
-    const now = new Date();
-    newDate = now.setDate(now.getDate() - 5);
-    console.log("5 days before date==>", newDate);
-    const remainingTime = targetDate - newDate;
-
-    if (remainingTime <= 0) {
-      clearInterval(timerInterval);
-      return;
+//Timer js
+document.addEventListener("readystatechange", (event) => {
+  if (event.target.readyState === "complete") {
+    var clockdiv = document.getElementsByClassName("timer");
+    var countDownDate = new Array();
+    for (var i = 0; i < clockdiv.length; i++) {
+      countDownDate[i] = new Array();
+      countDownDate[i]["el"] = clockdiv[i];
+      countDownDate[i]["time"] = new Date(
+        clockdiv[i].getAttribute("data-date")
+      ).getTime();
+      countDownDate[i]["days"] = 0;
+      countDownDate[i]["hours"] = 0;
+      countDownDate[i]["seconds"] = 0;
+      countDownDate[i]["minutes"] = 0;
     }
 
-    const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
-    const hours = Math.floor(
-      (remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const minutes = Math.floor(
-      (remainingTime % (1000 * 60 * 60)) / (1000 * 60)
-    );
-    const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+    var countdownfunction = setInterval(function () {
+      for (var i = 0; i < countDownDate.length; i++) {
+        var now = new Date().getTime();
+        var distance = countDownDate[i]["time"] - now;
+        countDownDate[i]["days"] = Math.floor(distance / (1000 * 60 * 60 * 24));
+        countDownDate[i]["hours"] = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        countDownDate[i]["minutes"] = Math.floor(
+          (distance % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        countDownDate[i]["seconds"] = Math.floor(
+          (distance % (1000 * 60)) / 1000
+        );
 
-    timer.querySelector(".days").innerHTML = days;
-    timer.querySelector(".hours").innerHTML = hours;
-    timer.querySelector(".minutes").innerHTML = minutes;
-    timer.querySelector(".seconds").innerHTML = seconds;
-  }, 1000);
-});
-/*--------only  Time loop---------*/
-
-timers.forEach((timer) => {
-  const targetDate = new Date(timer.dataset.date);
-  const timerInterval = setInterval(() => {
-    const now = new Date();
-    newDate = now.setDate(now.getDate() - 5);
-    console.log("5 days before date==>", newDate);
-    const remainingTime = targetDate - newDate;
-
-    if (remainingTime <= 0) {
-      clearInterval(timerInterval);
-      return;
-    }
-    const hours = Math.floor(
-      (remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
-    const minutes = Math.floor(
-      (remainingTime % (1000 * 60 * 60)) / (1000 * 60)
-    );
-    const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-
-    timer.querySelector(".hours").innerHTML = hours;
-    timer.querySelector(".minutes").innerHTML = minutes;
-    timer.querySelector(".seconds").innerHTML = seconds;
-  }, 1000);
+        if (distance < 0) {
+          countDownDate[i]["el"].querySelector(".days") &&
+            (countDownDate[i]["el"].querySelector(".days").innerHTML = 0);
+          countDownDate[i]["el"].querySelector(".hours").innerHTML = 0;
+          countDownDate[i]["el"].querySelector(".minutes").innerHTML = 0;
+          countDownDate[i]["el"].querySelector(".seconds").innerHTML = 0;
+        } else {
+          countDownDate[i]["el"].querySelector(".days") &&
+            (countDownDate[i]["el"].querySelector(".days").innerHTML =
+              countDownDate[i]["days"] + "<span>d</span>");
+          countDownDate[i]["el"].querySelector(".hours").innerHTML =
+            countDownDate[i]["hours"] + "<span>h</span>";
+          countDownDate[i]["el"].querySelector(".minutes").innerHTML =
+            countDownDate[i]["minutes"] + "<span>m</span>";
+          countDownDate[i]["el"].querySelector(".seconds").innerHTML =
+            countDownDate[i]["seconds"] + "<span>s</span>";
+        }
+      }
+    }, 1000);
+  }
 });

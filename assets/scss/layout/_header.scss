@@ -1,5 +1,5 @@
 /**=====================
-    Header css start
+    3.2 Header css start
 ==========================**/
 .dropdown-item {
     color: var(--bs-nav-link-color);
@@ -136,6 +136,93 @@ header {
     }
 }
 
+.dark-header {
+    .form-control {
+        background: rgba(31, 28, 72, 1);
+        border: 1px solid transparent;
+        color: rgba(var(--light-blue), 1);
+        width: 17.938rem;
+        height: 2.75rem;
+        border-radius: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &::placeholder {
+            color: rgba(var(--light-blue), 1);
+        }
+
+        @media (max-width:500px) {
+            display: none;
+        }
+    }
+
+    .navbar {
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+        .navbar-collapse {
+            flex-grow: unset;
+
+            @include media-breakpoint-down(xl) {
+                position: absolute;
+                top: 4.25rem;
+                background-color: rgba(var(--card-bg), 1);
+                z-index: 9;
+                padding: 1.125rem;
+                right: 43%;
+                width: 13.125rem;
+
+                @media (max-width:500px) {
+                    right: 26%;
+                    width: 10.125rem;
+                    top: 3.5rem;
+                }
+
+                .navbar-nav {
+                    gap: 1rem;
+
+                    .nav-item {
+                        .nav-link {
+                            padding: 0;
+                            font-size: 0.875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-nav {
+        @include media-breakpoint-down(xxl) {
+            gap: 1.25rem;
+        }
+
+        .nav-link {
+            color: rgba(var(--white), 1);
+            font-weight: 500;
+        }
+
+        .dropdown-menu {
+            &.show {
+                @media (max-width:500px) {
+                    min-width: 2.5rem;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xxl) {
+        .form-control {
+            width: 12.1875rem;
+            height: 2.5rem;
+        }
+    }
+
+}
+
 /**=====================
-    Header css end
+    3.2 Header css end
 ==========================**/

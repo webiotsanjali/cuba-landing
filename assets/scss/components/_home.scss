@@ -1,5 +1,5 @@
 /**=====================
-    Home css start
+   2.5 Home css start
 ==========================**/
 .home-details {
     margin-top: 1.875rem;
@@ -359,9 +359,11 @@
         @include media-breakpoint-down(xxl) {
             padding-bottom: 1.1rem;
         }
+
         @include media-breakpoint-down(lg) {
             padding-bottom: 0;
         }
+
         h1 {
             position: relative;
             font-size: 4.375rem;
@@ -374,15 +376,19 @@
             @include media-breakpoint-down(xl) {
                 font-size: 3.3rem;
             }
+
             @include media-breakpoint-down(lg) {
                 font-size: 3rem;
             }
+
             @include media-breakpoint-down(md) {
                 font-size: 2.5rem;
             }
+
             @include media-breakpoint-down(sm) {
                 font-size: 1.5rem;
             }
+
             span {
                 position: relative;
                 font-weight: 500;
@@ -398,6 +404,7 @@
                     top: -0.5625rem;
                     width: 8%;
                 }
+
                 @include media-breakpoint-down(sm) {
                     left: -0.625rem;
                     width: 6%;
@@ -412,20 +419,25 @@
             @media (max-width: 1459px) {
                 width: 96%;
             }
+
             @include media-breakpoint-down(lg) {
                 width: 100%;
             }
+
             @include media-breakpoint-down(md) {
                 padding-top: 0.5rem;
             }
+
             form {
                 box-shadow: 0px 10.9412px 10.9412px rgba(var(--service-shadow), 0.04), 0px 9.51387px 7.6111px rgba(var(--service-shadow), 0.06), 0px 5.05275px 4.0422px rgba(var(--service-shadow), 0.0484671);
                 border-radius: 5.47059px;
                 padding: .625rem;
                 margin-top: 1.25rem;
+
                 @include media-breakpoint-down(md) {
                     margin-top: 0.8rem;
                 }
+
                 svg {
                     fill: rgba(var(--theme-body-sub-title-color), 0.8);
                     width: .9375rem;
@@ -459,6 +471,7 @@
                     @include media-breakpoint-down(xxl) {
                         padding: .4375rem .75rem;
                     }
+
                     svg {
                         @include media-breakpoint-down(md) {
                             width: .75rem;
@@ -478,10 +491,12 @@
 
             ul {
                 margin-top: 1.875rem;
+
                 @include media-breakpoint-down(md) {
                     margin-top: 1.25rem;
                 }
-                @media  (max-width: 480px) {
+
+                @media (max-width: 480px) {
                     flex-direction: column;
                     align-items: flex-start;
                     gap: 0.5rem;
@@ -537,6 +552,175 @@
     }
 }
 
+
+.home-style-4 {
+    background-image: url(../images/nft/delivery-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+
+    @include media-breakpoint-down(xl) {
+        padding-bottom: 3.75rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 2.5rem;
+    }
+
+    .buttons {
+        .btn-primary {
+            &:hover {
+                background-color: rgba(var(--blue), 1);
+                color: rgba(var(--white), 1);
+                border: unset;
+            }
+        }
+    }
+
+    .swiper-wrapper {
+        .swiper-slide {
+            .home-image {
+                img {
+                    transform: scale(0.7);
+                    transition: all 0.4s ease-in-out;
+
+                    @include media-breakpoint-down(xl) {
+                        height: 25rem;
+                    }
+
+                    @include media-breakpoint-down(lg) {
+                        height: 18.75rem;
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        height: 12.5rem;
+                    }
+
+                    @media (max-width:445px) {
+                        height: 9.375rem;
+                    }
+                }
+            }
+
+            &.swiper-slide-active {
+                .home-image {
+                    img {
+                        transform: scale(1);
+                        transition: all 0.4s ease-in-out;
+
+                    }
+                }
+            }
+        }
+    }
+
+    h4 {
+        font-family: $font-cursive;
+        color: rgba(var(--success), 1);
+        margin-bottom: .3125rem;
+        margin-top: -0.25rem;
+        font-weight: 700;
+    }
+
+    h1 {
+        text-transform: uppercase;
+
+        span {
+            position: relative;
+
+            &:last-child {
+                background:
+                    linear-gradient(263.75deg, #6557FF 25.86%, #E01E5A 40.29%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            &:nth-child(1) {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-image: url(../images/shape/7.webp);
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-size: contain;
+                    width: 60%;
+                    height: 1rem;
+                    bottom: -0.813rem;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            &:nth-child(2) {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-image: url(../images/shape/8.webp);
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-size: contain;
+                    width: 80%;
+                    height: 1rem;
+                    bottom: -0.813rem;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/nft/dark-shadow1.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 0;
+        height: 8.125rem;
+        width: 100%;
+        background-position: center;
+
+        @include media-breakpoint-down(xl) {
+            height: 5.3125rem;
+        }
+
+        @include media-breakpoint-down(lg) {
+            height: 4.0625rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            height: 2.375rem;
+        }
+
+        @media (max-width:400px) {
+            height: 1.375rem;
+        }
+
+    }
+}
+
+.home-title {
+    position: relative;
+    z-index: 1;
+    padding-top: 2.188rem;
+
+    @media (max-width:500px) {
+        padding-top: 1.5rem;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+
 /**=====================
-    Home css end
+   2.5 Home css end
 ==========================**/
