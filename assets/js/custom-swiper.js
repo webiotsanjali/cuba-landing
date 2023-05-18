@@ -203,7 +203,6 @@ const home_slider1 = new Swiper(".home-slide-1", {
   },
 });
 
-// review slider
 var review_swiper_nav = new Swiper(".review-nav", {
   spaceBetween: 10,
   slidesPerView: 4,
@@ -289,15 +288,12 @@ const category_slider_1 = new Swiper(".category-slider-1", {
     },
     768: {
       slidesPerView: 4,
-      // spaceBetween: 0,
     },
     992: {
       slidesPerView: 6,
-      // spaceBetween: 0,
     },
     1200: {
       slidesPerView: 7,
-      // spaceBetween: 22,
     },
   },
 });

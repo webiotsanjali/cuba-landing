@@ -1,5 +1,5 @@
 /**=====================
-    Reset css start
+   1.1 Reset css start
 ==========================**/
 @media (min-width: 1460px) {
     .custom-container {
@@ -162,6 +162,13 @@ section,
     color: rgba(var(--white), 1);
 }
 
+.bg-blur-color {
+    position: absolute;
+    z-index: -1;
+    width: 57.375rem;
+    height: 41.5625rem;
+}
+
 /**=====================
-    Reset css end
+  1.1 Reset css end
 ==========================**/
